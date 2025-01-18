@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Normalize.css">
+    <link rel="stylesheet" href="/css/style-common.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>FOTO-print</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <main class="main">
+    <section id="header"></section>
+    <section id="hero" class="hero section-offset">
+      <div class="hero__container container">
+        <div class="hero-bg">
+          <div class="hero__content flex">
+            <h1 class="hero__title">
+              ФОТО-ПРИНТ
+            </h1>
+            <p class="paragraph hero__descr">
+              Полный комплекс полиграфических решений<br>для дома, офиса и&nbsp;учёбы.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="service" class="service section-offset">
+      <div class="service__container container">
+        <h2 class="service__title section-title">
+          Популярные услуги
+        </h2>
+        <ul class="service__list list list-reset flex">
+          <li class="service__item item item--1 flex">
+            <a href="/html/print/large-format.html" class="card">
+              <h3 class="card__title">
+                Широкоформатная печать
+              </h3>
+              <img src="/" alt="Картинка" class="card__img">
+            </a>
+          </li>
+          <li class="service__item item item--1 flex">
+            <a href="/html/lamination/lami.html" class="card">
+              <h3 class="card__title">
+                Ламинирование
+              </h3>
+              <img src="/" alt="Картинка" class="card__img">
+            </a>
+          </li>
+          <li class="service__item item item--1 flex">
+            <a href="/html/polygraphy/business-card.html" class="card">
+              <h3 class="card__title">
+                Визитки
+              </h3>
+              <img src="/" alt="Картинка" class="card__img">
+            </a>
+          </li>
+          <li class="service__item item item--1 flex">
+            <a href="/html/print/polaroid.html" class="card">
+              <h3 class="card__title">
+                Фото в&nbsp;стиле ПОЛАРОИД
+              </h3>
+              <img src="/" alt="Картинка" class="card__img">
+            </a>
+          </li>
+          <li class="service__item item item--2 flex">
+            <a href="/html/copy/record.html" class="card">
+              <h3 class="card__title">
+                Запись информации на&nbsp;носители и&nbsp;отправка по&nbsp;почте
+              </h3>
+              <img src="/" alt="Картинка" class="card__img">
+            </a>
+          </li>
+          <li class="service__item item item--2 flex">
+            <a href="/html/polygraphy/flyers.html" class="card">
+              <h3 class="card__title">
+                Листовки&nbsp;/ Флаеры
+              </h3>
+              <img src="/" alt="Картинка" class="card__img">
+            </a>
+          </li>
+          <li class="service__item item item--1 flex">
+            <a href="/html/binding/steel.html" class="card">
+              <h3 class="card__title">
+                Печать и&nbsp;переплёт диссертиций
+              </h3>
+              <img src="/" alt="Картинка" class="card__img">
+            </a>
+          </li>
+          <li class="service__item item item--1 flex">
+            <a href="/html/stickers/round.html" class="card">
+              <h3 class="card__title">
+                Наклейки
+              </h3>
+              <img src="/" alt="Картинка" class="card__img">
+            </a>
+          </li>
+          <li class="service__item item item--1 flex">
+            <a href="/html/print/canvas.html" class="card">
+              <h3 class="card__title">
+                Печать на&nbsp;холсте
+              </h3>
+              <img src="/" alt="Картинка" class="card__img">
+            </a>
+          </li>
+          <li class="service__item item item--1 flex">
+            <a href="/html/scanning/document.html" class="card">
+              <h3 class="card__title">
+                Сканирование
+              </h3>
+              <img src="/" alt="Картинка" class="card__img">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio section-offset">
+      <div class="portfolio__container container flex">
+        <div class="portfolio__up flex">
+          <h3 class="portfolio__title section-title">
+            Портфолио
+          </h3>
+          <a href="#" class="portfolio__link flex">
+            Все работы
+            <img src="/img/portfolio-arrow.svg" alt="Стрелочка">
+          </a>
+        </div>
+        <div class="portfolio__down flex">
+          <ul class="portfolio__list list-reset flex">
+            <li class="portfolio__item item--1">
+              <a href="#" class="card"></a>
+            </li>
+            <li class="portfolio__item item--1">
+              <a href="#" class="card"></a>
+            </li>
+            <li class="portfolio__item item--1">
+              <a href="#" class="card"></a>
+            </li>
+            <li class="portfolio__item item--1">
+              <a href="#" class="card"></a>
+            </li>
+            <li class="portfolio__item item--1">
+              <a href="#" class="card"></a>
+            </li>
+            <li class="portfolio__item item--1">
+              <a href="#" class="card"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="footer"></section>
+  </main>
+
+</body>
+</html>

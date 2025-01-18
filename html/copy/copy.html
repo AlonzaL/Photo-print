@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/copy/copy.css">
+  <title>Копирование</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="copy" class="copy section-offset">
+    <div class="copy__container container">
+      <h2 class="copy__title section-title">
+        Копирование
+      </h2>
+      <ul class="copy__list list list-reset flex">
+        <li class="copy__item item item--2 flex">
+          <a href="/html/copy/copy-document.html" class="card">
+            <h3 class="card__title">Копирование документов</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="copy__item item item--2 flex">
+          <a href="/html/copy/copy-large-format.html" class="card">
+            <h3 class="card__title">Широкоформатная копия</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="copy__item item item--2 flex">
+          <a href="/html/copy/record.html" class="card">
+            <h3 class="card__title">Запись информации на&nbsp;носители и&nbsp;отправка документов по&nbsp;почте</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="footer"></section>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/pricelist-table.css">
+  <link rel="stylesheet" href="/css/print/foto.css">
+  <title>Печать фотографий</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="foto" class="foto section-offset">
+    <div class="foto__container container">
+      <div class="title">
+        <h2 class="foto__title section-title">
+          Печать фотографий
+        </h2>
+      </div>
+      <div>
+        <p class="foto__descr section__descr paragraph">
+          На&nbsp;матовой бумаге лучше смотрятся высокодетализированные изображения с&nbsp;мелкими деталями.
+        </p>
+        <p class="foto__descr section__descr paragraph">
+          Как правило, этот вид стоит дешевле, чем глянец и&nbsp;обладает повышенной стойкостью к&nbsp;отпечаткам пальцев и&nbsp;царапинам.
+        </p>
+      </div>
+      <!-- <article class="foto__article article flex">
+        <h3 class="article__title">
+          Особенности цветной печати
+        </h3>
+        <p class="article__descr paragraph">
+          Часто широкий формат фотопечати заказывают, для того чтобы применять в&nbsp;рекламной или PR-кампании. Изображения высокого качества требуются:
+        </p>
+        <ul class="foto__list list-reset flex">
+          <li class="item-ul foto__item">
+            <p class="foto__descr item__descr paragraph">
+              для баннеров;
+            </p>
+          </li>
+          <li class="item-ul foto__item">
+            <p class="foto__descr item__descr paragraph">
+              плакатов;
+            </p>
+          </li>
+          <li class="item-ul foto__item">
+            <p class="foto__descr item__descr paragraph">
+              ролл-апов;
+            </p>
+          </li>
+          <li class="item-ul foto__item">
+            <p class="foto__descr item__descr paragraph">
+              пресс-воллов;
+            </p>
+          </li>
+          <li class="item-ul foto__item">
+            <p class="foto__descr item__descr paragraph">
+              стендов;
+            </p>
+          </li>
+          <li class="item-ul foto__item">
+            <p class="foto__descr item__descr paragraph">
+              лайтбоксов и многого другого.
+            </p>
+          </li>
+        </ul>
+        <p class="foto__descr paragraph">
+          Данный вид также подходит не&nbsp;только для бизнеса, но&nbsp;и&nbsp;для частных лиц, например, вы&nbsp;можете заказать широкоформатную фотопечать обоев, чтобы обновить ваш интерьер.
+        </p>
+      </article> -->
+      <div class="article__block flex">
+        <p class="block__title">
+          Важно!
+        </p>
+        <p class="block__descr block__descr--1 paragraph">
+          Цены на&nbsp;сайте носят информационный характер и&nbsp;не&nbsp;являются публичной офертой.
+        </p>
+        <p class="block__descr block__descr--2 paragraph">
+          Возможна печать нестандартных форматов шириной до 880 мм и длиной до 15 000 мм
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="pricelist" class="pricelist section-offset">
+    <div class="pricelist__container container">
+      <!-- <h2 class="pricelist__title section-title">
+        Прейскурант
+      </h2>
+      <div table--1>
+        <table class="pricelist__table--1 table">
+          <tr class="pricelist__tr">
+            <th class="pricelist__th">Формат</th>
+            <th class="pricelist__th">Тип покрытия</th>
+            <th class="pricelist__th">180 гр/м<sup>2</sup></th>
+            <th class="pricelist__th">190 гр/м<sup>2</sup></th>
+            <th class="pricelist__th">200 гр/м<sup>2</sup></th>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A2</p>
+                <p class="paper__descr">420 × 594 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">Матовая</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Глянец</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Сатин </td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--2 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A1</p>
+                <p class="paper__descr">594 × 841 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">Матовая</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Глянец</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Сатин </td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--3 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A0</p>
+                <p class="paper__descr">841 × 1189 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">Матовая</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Глянец</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+        </table>
+      </div> -->
+      <article class="pricelist__article article flex">
+        <h3 class="article__title">Преимущества и недостатки разных видов бумаги</h3>
+        <!-- <p class="article__descr paragraph">
+          Конечно&nbsp;же, мы&nbsp;сделаем все возможное, чтобы те&nbsp;изображения, которые вы&nbsp;хотите распечатать в&nbsp;широком формате, были наилучшего качества, но&nbsp;все-таки есть некоторые требования, которые значительно облегчат задачу.
+        </p> -->
+        <ul class="sector__list list-reset flex">
+          <li class="sector__item sector__item--1 flex">
+            <h4 class="sector__title">Глянцевая бумага</h4>
+            <p class="sector__descr  paragraph">
+              Глянец обладает повышенной плотностью и&nbsp;наличием специального глянцевого слоя, который предотвращает выцветание и&nbsp;смывание чернил с&nbsp;поверхности. Такую бумагу лучше всего использовать для печати фотографий и&nbsp;изображений с&nbsp;яркими пейзажами и&nbsp;мягкими полутонами. Глянец прекрасно подойдет для печати изображений, которые требуют насыщенной цветопередачи.
+            </p>
+          </li>
+          <li class="sector__item sector__item--1 flex">
+            <h4 class="sector__title">Супер глянец плетёная</h4>
+            <p class="sector__descr  paragraph">
+              Отличается покрытием в&nbsp;виде мелкой сетки, ромбиков расположенных по&nbsp;всей поверхности конечного продукта. Главной целью этого типа фотобумаги является достижение <strong>ОБЪЕМНОСТИ</strong> распечатанного изображения. Одним из&nbsp;самых удачных известных нам применений для данного типа фотобумаги является фактурное черно-белое фото.
+            </p>
+          </li>
+          <li class="sector__item sector__item--2 flex">
+            <h4 class="sector__title">Суперглянцевая бумага</h4>
+            <p class="sector__descr paragraph">
+              Это покрытие с&nbsp;повышенным содержанием глянца. Отличается максимально возможной цветопередачей и&nbsp;насыщенностью цветовых оттенков. Обычно используется в&nbsp;профессиональной фото печати, и&nbsp;коммерческой полиграфии, соответственно, и&nbsp;стоит дороже других видов бумаги для печати фотографий.
+            </p>
+          </li>
+
+          <li class="sector__item sector__item--1 flex">
+            <h4 class="sector__title">Двусторонняя фотобумага</h4>
+            <p class="sector__descr  paragraph">
+              Двусторонняя фотобумага используется при печати презентационных и&nbsp;рекламных материалов, малотиражных буклетов, брошюр и&nbsp;альбомов. Она позволяет задействовать для печати обе стороны бумажного листа и&nbsp;напечатать на&nbsp;ней в&nbsp;два раза больше изображений и&nbsp;информации.
+            </p>
+          </li>
+          <li class="sector__item sector__item--1 flex">
+            <h4 class="sector__title">Самоклеящаяся фотобумага</h4>
+            <p class="sector__descr  paragraph">
+              Самоклеящаяся фотобумага имеет с&nbsp;обратной стороны специальное адгезивное покрытие для того, чтобы отпечатанное на&nbsp;бумаге изображение можно было затем наклеить на&nbsp;различные носители. Такая бумага широко используется, в&nbsp;частности, для изготовления рекламных стикеров и&nbsp;наклеек.
+            </p>
+          </li>
+          <li class="sector__item sector__item--2 flex">
+            <h4 class="sector__title">Магнитная фотобумага</h4>
+            <p class="sector__descr paragraph">
+              Данная фотобумага имеет подложку из&nbsp;магнитной основы, что позволяет печатать любые изображения, которые легко удерживаются на&nbsp;металлических поверхностях. С&nbsp;бумагой на&nbsp;магнитной основе, например, удобно создавать различные пазлы для ребенка или стикеры.
+            </p>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section>
+  <section id="footer"></section>
+
+</body>
+</html>

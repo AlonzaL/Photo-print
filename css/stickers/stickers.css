@@ -1,0 +1,8 @@
+.article__block {
+  margin-bottom: 40px;
+}
+
+.article__list {
+  flex-direction: column;
+  margin-bottom: 40px;
+}

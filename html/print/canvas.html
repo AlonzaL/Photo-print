@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/pricelist-table.css">
+  <link rel="stylesheet" href="/css/print/canvas.css">
+  <title>Печать на холсте</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="canvas" class="canvas section-offset">
+    <div class="canvas__container container">
+      <div class="title">
+        <h2 class="canvas__title section-title">
+          Печать на холсте
+        </h2>
+        <!-- <p class="title__descr paragraph">
+          плакаты
+        </p> -->
+      </div>
+      <p class="canvas__descr section__descr paragraph">
+        Оформить интерьер в&nbsp;современном стиле совсем несложно. Наиболее выгодный способ&nbsp;&mdash; печать на&nbsp;натуральном холсте, цена такой услуги довольно невысока, а&nbsp;результат порадует любого. Готовое изделие подарит атмосферу помещению, поможет выразить идею, придать характер дизайну интерьера, за&nbsp;счет чего любой дом, офис, коммерческое здание станут уникальными, запоминающимися и&nbsp;индивидуальными.
+      </p>
+      <p class="canvas__descr section__descr paragraph">
+        Метод гарантирует долговечность, так как краски глубоко впитываются в&nbsp;холст и&nbsp;сохраняются на&nbsp;долгое время. Достаточно заглянуть в&nbsp;любой музей, чтобы убедиться в&nbsp;этом. Хлопковые холсты&nbsp;&mdash; это прекрасный материал для художника, а&nbsp;теперь и&nbsp;полиграфии, проверенный веками.
+      </p>
+      <!-- <article class="canvas__article article flex">
+        <h3 class="article__title">
+          Особенности цветной печати
+        </h3>
+        <p class="article__descr paragraph">
+          Часто широкий формат фотопечати заказывают, для того чтобы применять в&nbsp;рекламной или PR-кампании. Изображения высокого качества требуются:
+        </p>
+        <ul class="canvas__list list-reset flex">
+          <li class="item-ul canvas__item">
+            <p class="canvas__descr item__descr paragraph">
+              для баннеров;
+            </p>
+          </li>
+          <li class="item-ul canvas__item">
+            <p class="canvas__descr item__descr paragraph">
+              плакатов;
+            </p>
+          </li>
+          <li class="item-ul canvas__item">
+            <p class="canvas__descr item__descr paragraph">
+              ролл-апов;
+            </p>
+          </li>
+          <li class="item-ul canvas__item">
+            <p class="canvas__descr item__descr paragraph">
+              пресс-воллов;
+            </p>
+          </li>
+          <li class="item-ul canvas__item">
+            <p class="canvas__descr item__descr paragraph">
+              стендов;
+            </p>
+          </li>
+          <li class="item-ul canvas__item">
+            <p class="canvas__descr item__descr paragraph">
+              лайтбоксов и многого другого.
+            </p>
+          </li>
+        </ul>
+        <p class="canvas__descr paragraph">
+          Данный вид также подходит не&nbsp;только для бизнеса, но&nbsp;и&nbsp;для частных лиц, например, вы&nbsp;можете заказать широкоформатную фотопечать обоев, чтобы обновить ваш интерьер.
+        </p>
+      </article> -->
+      <div class="article__block flex">
+        <p class="block__title">
+          Важно!
+        </p>
+        <p class="block__descr block__descr--1 paragraph">
+          Цены на&nbsp;сайте носят информационный характер и&nbsp;не&nbsp;являются публичной офертой.
+        </p>
+        <!-- <p class="block__descr block__descr--2 paragraph">
+          Возможна печать нестандартных форматов шириной до 880 мм и длиной до 15 000 мм
+        </p> -->
+      </div>
+    </div>
+  </section>
+  <section id="pricelist" class="pricelist section-offset">
+    <div class="pricelist__container container">
+      <h2 class="pricelist__title section-title">
+        Прейскурант
+      </h2>
+      <div table--1>
+        <table class="pricelist__table--1 table">
+          <tr class="pricelist__tr">
+            <th class="pricelist__th">Формат</th>
+            <th class="pricelist__th">Печать на&nbsp;синтетическом холсте</th>
+            <th class="pricelist__th">Холст на&nbsp;подрамнике</th>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A4</p>
+                <p class="paper__descr">200 × 300 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">850 руб.</td>
+            <td class="pricelist__td">1870 руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--2 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A3</p>
+                <p class="paper__descr">300 × 400 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">1325 руб.</td>
+            <td class="pricelist__td">2625 руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--3 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A2</p>
+                <p class="paper__descr">400 × 600 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">1940 руб.</td>
+            <td class="pricelist__td">3620 руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--4 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">50 × 70 см</p>
+                <!-- <p class="paper__descr">50 × 70 мм</p> -->
+              </div>
+            </td>
+            <td class="pricelist__td">2530 руб.</td>
+            <td class="pricelist__td">4775 руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--5 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">55 × 75 см</p>
+                <!-- <p class="paper__descr">50 × 70 мм</p> -->
+              </div>
+            </td>
+            <td class="pricelist__td">2730 руб.</td>
+            <td class="pricelist__td">5170 руб.</td>
+          </tr>
+        </table>
+      </div>
+      <article class="pricelist__article article flex">
+        <h3 class="article__title">Преимущества печати на&nbsp;холсте</h3>
+        <p class="article__descr paragraph">
+          Фотопечать&nbsp;&mdash; это экономичный способ создания настоящих картин, по&nbsp;качеству не&nbsp;уступающих работам профессиональных художников. Можно сделать как репродукцию знаменитых на&nbsp;весь мир шедевров&nbsp;&mdash; от&nbsp;&laquo;Черного квадрата&raquo; до&nbsp;&laquo;Джоконды&raquo;, причем качество будет даже лучше, чем если заказать отрисовку от&nbsp;руки. Другой вариант&nbsp;&mdash; перенесение на&nbsp;холст фотографии, пейзажа или человеческого лица. Среди преимуществ технологии:
+        </p>
+        <ul class="sector__list list-reset flex">
+          <li class="sector__item sector__item--1 flex">
+            <h4 class="sector__title">Создание новой репродукции</h4>
+            <p class="sector__descr  paragraph">
+              Всегда можно создать новую репродукцию, если у&nbsp;вас есть оригинал в&nbsp;цифровом виде. В&nbsp;любой момент просто заказываете новый образец печати на&nbsp;холсте.
+            </p>
+          </li>
+          <li class="sector__item sector__item--1 flex">
+            <h4 class="sector__title">Экономие времени</h4>
+            <p class="sector__descr  paragraph">
+              Не&nbsp;потребуется ждать: художнику на&nbsp;создание копии необходимо намного больше времени, чем профессиональной современной технике на&nbsp;распечатку.
+            </p>
+          </li>
+          <li class="sector__item sector__item--2 flex">
+            <h4 class="sector__title">Улучшение исходника</h4>
+            <p class="sector__descr paragraph">
+              Если ваш исходник не&nbsp;слишком хорошего качества, можно заказать дополнительную услугу: подчистить, отретушировать. Это особенно актуально, если вы&nbsp;хотите подарить человеку его портрет и&nbsp;сделать изображение как можно более красивым, привлекательным, чтобы адресат действительно себе понравился.
+            </p>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section>
+  <section id="footer"></section>
+
+</body>
+</html>

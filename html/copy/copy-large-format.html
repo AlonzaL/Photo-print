@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/pricelist-table.css">
+  <link rel="stylesheet" href="/css/copy/copy-large-format.css">
+  <title>Широкоформатная копия</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="copy-large-format" class="copy-large-format section-offset">
+    <div class="copy-large-format__container container">
+      <div class="title">
+        <h2 class="copy-large-format__title section-title">
+          Широкоформатная копия
+        </h2>
+        <!-- <p class="title__descr paragraph">
+          ксерокопия
+        </p> -->
+      </div>
+      <p class="copy-large-format__descr section__descr paragraph">
+        Процесс получения копии документации большого формата, такого как А2, А1, А0, невозможно осуществить без специального оборудования. Стандартные офисные принтеры печатают только А4. Широкоформатные документы могут пригодиться студентам технических вузов, специалистам в&nbsp;сфере производства, представителям конструкторского бюро или организации, которая занимается проектами и&nbsp;сметой. Услуга крайне востребована и&nbsp;пользуется популярностью.
+      </p>
+      <article class="copy-large-format__article article flex">
+        <h3 class="article__title">
+          Особенности производства широкоформатных чертежей
+        </h3>
+        <p class="article__descr paragraph">
+          Заказать копирование чертежей можно только в&nbsp;компании, которая использует специализированные аппараты. Технология предусматривает определенные ограничения: 100&nbsp;мм по&nbsp;ширине и&nbsp;толщина&nbsp;&mdash; до&nbsp;13&nbsp;мм. Другие особенности:
+        </p>
+        <ul class="copy-large-format__list list-reset flex">
+          <li class="item-ul copy-large-format__item">
+            <p class="copy-large-format__descr item__descr paragraph">
+              Специализированные устройства позволят скопировать документы, общая длина которых достигает 15&nbsp;метров.
+            </p>
+          </li>
+          <li class="item-ul copy-large-format__item">
+            <p class="copy-large-format__descr item__descr paragraph">
+              Услуга предоставляется в&nbsp;отношении не&nbsp;только чертежей, но&nbsp;и&nbsp;других документов&nbsp;&mdash; рисунков, фото, плакатов, проектов инженерного типа, а&nbsp;также различных презентационных материалов (диаграмм, гистограмм).
+            </p>
+          </li>
+          <li class="item-ul copy-large-format__item">
+            <p class="copy-large-format__descr item__descr paragraph">
+              В&nbsp;стоимость входят как первичная обработка (сканирование) исходника, так и&nbsp;конечное предоставлении копии, которая распечатывается на&nbsp;плоттере.
+            </p>
+          </li>
+          <li class="item-ul copy-large-format__item">
+            <p class="copy-large-format__descr item__descr paragraph">
+              Цена зависит от&nbsp;способа производства, можно работать с&nbsp;монохромными либо цветными документами. Также она может увеличиться, если исходник ветхий, приходится проводить восстановление.
+            </p>
+          </li>
+        </ul>
+        <!-- <p class="copy-large-format__descr paragraph">
+          Данный вид также подходит не&nbsp;только для бизнеса, но&nbsp;и&nbsp;для частных лиц, например, вы&nbsp;можете заказать широкоформатную фотопечать обоев, чтобы обновить ваш интерьер.
+        </p> -->
+      </article>
+      <!-- <div class="article__block flex">
+        <p class="block__title">
+          Важно!
+        </p>
+        <p class="block__descr block__descr--1 paragraph">
+          Двухстороннее копирование увеличивает цену в&nbsp;2&nbsp;раза.
+        </p>
+        <p class="block__descr block__descr--2 paragraph">
+          <strong>ПРИМЕЧАНИЕ:</strong> Стоимость начисляется за каждый проход сканера.
+        </p>
+      </div> -->
+    </div>
+  </section>
+  <section id="pricelist" class="pricelist section-offset">
+    <div class="pricelist__container container">
+      <h2 class="pricelist__title section-title">
+        Прейскурант
+      </h2>
+      <!-- <div class="table--1">
+        <table class="pricelist__table--1 table">
+          <tr class="pricelist__tr">
+            <th class="pricelist__th" rowspan="2">Формат</th>
+            <th class="pricelist__th" colspan="2" >Черно-белая копия</th>
+            <th class="pricelist__th" colspan="2">Цветная копия</th>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td subtitle">Стекло</td>
+            <td class="pricelist__td subtitle">Автоподатчик</td>
+            <td class="pricelist__td subtitle">Стекло</td>
+            <td class="pricelist__td subtitle">Автоподатчик</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">А4</p>
+                <p class="paper__descr">210х297 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--2 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">А3</p>
+                <p class="paper__descr">297х420 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+      </div> -->
+      <div class="table--2">
+        <table class="pricelist__table--1 table">
+          <tr class="pricelist__tr">
+            <th class="pricelist__th" rowspan="2">Формат</th>
+            <th class="pricelist__th" colspan="2" >Черно-белая копия</th>
+            <th class="pricelist__th" colspan="3">Цветная копия</th>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td subtitle">до 50% заливка</td>
+            <td class="pricelist__td subtitle">до 100% заливки</td>
+            <td class="pricelist__td subtitle">до 20% заливка</td>
+            <td class="pricelist__td subtitle">до 50% заливки</td>
+            <td class="pricelist__td subtitle">до 100% заливки</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common col-5" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A2</p>
+                <p class="paper__descr">420х594 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--2 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common col-5" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A1</p>
+                <p class="paper__descr">594х841 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--3 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common col-5" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A0</p>
+                <p class="paper__descr">841х1189 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="table--3">
+        <table class="pricelist__table--1 table">
+          <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+          </colgroup>
+          <tr class="pricelist__tr">
+            <th class="pricelist__th" colspan="6">Определение степени заливки</th>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Степень заливки</td>
+            <td class="pricelist__td" colspan="5">Характеристики</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common col-5" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">до 20%</p>
+                <!-- <p class="paper__descr">420х594 мм</p> -->
+              </div>
+            </td>
+            <td class="pricelist__td" colspan="5">Линии без плашек</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--2 table">
+          <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+          </colgroup>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common col-5" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">до 50%</p>
+                <!-- <p class="paper__descr">420х594 мм</p> -->
+              </div>
+            </td>
+            <td class="pricelist__td" colspan="5">Линии и небольшие плашки (например: план)</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--3 table">
+          <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+          </colgroup>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common col-5" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">до 100%</p>
+                <!-- <p class="paper__descr">420х594 мм</p> -->
+              </div>
+            </td>
+            <td class="pricelist__td" colspan="5">Площадь плашек занимает более половины печатного листа (например: фасад)</td>
+          </tr>
+        </table>
+      </div>
+      <article class="pricelist__article article flex">
+        <h3 class="article__title">Наши возможностиа</h3>
+        <!-- <p class="article__descr paragraph">
+          Конечно&nbsp;же, мы&nbsp;сделаем все возможное, чтобы те&nbsp;изображения, которые вы&nbsp;хотите распечатать в&nbsp;широком формате, были наилучшего качества, но&nbsp;все-таки есть некоторые требования, которые значительно облегчат задачу.
+        </p> -->
+        <ul class="sector__list list-reset flex">
+          <li class="sector__item sector__item--1 flex">
+            <h4 class="sector__title">Подготовка к печати</h4>
+            <p class="sector__descr  paragraph">
+              Мы&nbsp;предлагаем подготовить печать различной документации вне зависимости от&nbsp;сложности работы.
+            </p>
+          </li>
+          <li class="sector__item sector__item--1 flex">
+            <h4 class="sector__title">Редактирование документа</h4>
+            <p class="sector__descr  paragraph">
+              При необходимости проводим ретуширование, чтобы избавиться от&nbsp;артефактов и недостатков изначального материала, а также восстанавливаем ветхие исходники.
+            </p>
+          </li>
+          <li class="sector__item sector__item--2 flex">
+            <h4 class="sector__title">Масштаб</h4>
+            <p class="sector__descr paragraph">
+              Улучшаем финальное качество, а также можем уменьшить либо увеличить масштаб по вашему желанию.
+            </p>
+            <!-- <p class="sector__descr paragraph">
+              Цены за услуги указаны в таблице ниже. У нас возможна распечатка форматов от 880 мм в ширину и до 15 000 мм в длину. Если у вас есть какие-то нестандартные пожелания к фотопечати, то мы с удовольствием их рассмотрим и предложим свое решение.
+            </p> -->
+          </li>
+        </ul>
+      </article>
+      <p class="pricelist__descr pricelist__descr--2 paragraph">
+             Ограничений по&nbsp;технологии немного: нельзя отреставрировать только совсем ветхие документы, а&nbsp;также не&nbsp;получится воспроизвести эффекты фольги, светящихся красителей. Гарантируем отличное качество и&nbsp;соблюдение сроков при производстве большого объема полиграфии.
+      </p>
+    </div>
+  </section>
+  <section id="footer"></section>
+</body>
+</html>

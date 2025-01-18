@@ -1,0 +1,68 @@
+.item {
+  margin-left: 18px;
+  list-style: circle;
+}
+
+/* payment */
+.payment__content {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment__img {
+  width: 635px;
+}
+
+.payment__right {
+  width: 635px;
+}
+
+.payment__list {
+  flex-direction: column;
+}
+
+/* .payment__item {
+  margin-left: 18px;
+  list-style: circle;
+} */
+
+/* return */
+.return__content {
+  flex-direction: column;
+}
+
+.return__list {
+  flex-direction: column;
+}
+
+/* refusal */
+.refusal__contant {
+  flex-direction: column;
+}
+
+.refusal__list {
+  flex-direction: column;
+}
+
+.description__list {
+  flex-direction: column;
+}
+
+/* details */
+.details__table {
+  /* border: 2px solid #fcb900; */
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.details__td {
+  padding: 12px;
+  border: 2px solid #fcb900;
+}
+
+tr:first-child td:first-child { border-top-left-radius: 20px; }
+tr:first-child td:last-child { border-top-right-radius: 20px; }
+
+tr:last-child td:first-child { border-bottom-left-radius: 20px; }
+tr:last-child td:last-child { border-bottom-right-radius: 20px; }

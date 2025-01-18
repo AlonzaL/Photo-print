@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/pricelist-table.css">
+  <link rel="stylesheet" href="/css/polygraphy/calendar.css">
+  <title>Календари</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="calendar" class="calendar section-offset">
+    <div class="calendar__container container">
+      <div class="title">
+        <h2 class="calendar__title section-title">
+          Календари
+        </h2>
+        <p class="title__descr paragraph">
+          карманные календарики
+        </p>
+      </div>
+      <div class="calendar__nav">
+        <p class="nav__title paragraph">
+          Навигация по видам календарей:
+        </p>
+        <ul class="nav list-reset">
+          <li class="nav__item item-ul">
+            <a href="#anchor1">Календарик 72 x 102 мм</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <p class="calendar__descr section__descr paragraph">
+        Казалось&nbsp;бы, цифровой формат полностью поглотил информационное пространство и&nbsp;сфера печати значительно снизила обороты, но&nbsp;тем не&nbsp;менее это нельзя назвать 100%-ной истиной. Черно-белая печать и&nbsp;копирование все еще востребованы в&nbsp;сфере образования, в&nbsp;бюджетных организациях, у&nbsp;малого бизнеса и&nbsp;прочих. Кому-то требуется печать научных работ, а&nbsp;кому-то информационных листовок и&nbsp;памяток. Чтобы заказать печать формата А4&nbsp;или&nbsp;А3, вы&nbsp;можете обратиться к&nbsp;нам.
+      </p> -->
+      <!-- <article class="calendar__article article flex">
+        <h3 class="article__title">
+          Особенности черно-белой печати
+        </h3>
+        <p class="article__descr paragraph">
+          Черно-белая печать является монохромной. Используется только один цвет, поэтому текст получается четким, но&nbsp;данная техника не&nbsp;рекомендуется для печати изображений, так как в&nbsp;этом случае изображение будет плоским.
+        </p>
+      </article> -->
+      <div class="article__block flex">
+        <p class="block__title">
+          Важно!
+        </p>
+        <p class="block__descr block__descr--1 paragraph">
+          Просим учитывать, что изготовление полиграфической продукции происходит только по&nbsp;рабочим дням т.е. выходные дни прибавляются к&nbsp;сроку выполнения заказа.... Сроки исполнения заказов просим уточнять у&nbsp;менеджеров.
+        </p>
+        <!-- <p class="block__descr block__descr--2 paragraph">
+          <strong>СКИДКА СТУДЕНТАМ 10%</strong> на черно/белую печать документов при предъявлении студенческого билета.
+        </p> -->
+      </div>
+    </div>
+  </section>
+   <section id="pricelist" class="pricelist section-offset">
+    <div class="pricelist__container container">
+      <h2 class="pricelist__title section-title">
+        Прейскурант
+      </h2>
+      <div table--3>
+        <a id="anchor1"></a>
+        <table class="pricelist__table--1 table">
+          <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+          </colgroup>
+          <tr class="pricelist__tr">
+            <th class="pricelist__th" rowspan="2">Формат</th>
+            <th class="pricelist__th" rowspan="2">Печать</th>
+            <th class="pricelist__th" rowspan="2">Вид</th>
+            <th class="pricelist__th" rowspan="2">Материал</th>
+            <th class="pricelist__th" rowspan="2">Сроки</th>
+            <th class="pricelist__th" colspan="7">Количество (шт.)</th>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">500</td>
+            <td class="pricelist__td">1000</td>
+            <td class="pricelist__td">2000</td>
+            <td class="pricelist__td">3000</td>
+            <td class="pricelist__td">4000</td>
+            <td class="pricelist__td">5000</td>
+            <td class="pricelist__td">10000</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">72 x 102 мм</p>
+                <!-- <p class="paper__descr">922 x 602 мм</p> -->
+              </div>
+            </td>
+            <td class="pricelist__td">Календарь</td>
+            <td class="pricelist__td">Односторонняя</td>
+            <td class="pricelist__td">Мелованный картон 300&nbsp;г/м&sup2;</td>
+            <td class="pricelist__td">уточняйте</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Календарь</td>
+            <td class="pricelist__td">Двухсторонняя</td>
+            <td class="pricelist__td">Мелованный картон 300&nbsp;г/м&sup2;</td>
+            <td class="pricelist__td">уточняйте</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+            <td class="pricelist__td rub">- руб.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!-- <article class="calendar__article article flex">
+    <div class="container article__container">
+      <div>
+        <h3 class="article__title">Услуги</h3>
+      <p class="article__descr article__descr--1 paragraph">
+        Мы&nbsp;производим черно-белую печать на&nbsp;различных форматах бумаги, как стандартной&nbsp;А4, так и&nbsp;А3&nbsp;и&nbsp;прочих. Стоимость будет варьироваться в&nbsp;зависимости от&nbsp;размера листа, объема и&nbsp;сложности работы. С&nbsp;подробной стоимостью на&nbsp;услуги можно ознакомиться в&nbsp;таблице.
+      </p>
+      <p class="article__descr article__descr--2 paragraph">
+        Мы&nbsp;предлагаем помощь в&nbsp;оформлении дипломных работ. Рекомендуется менять формат документа с&nbsp;Word на&nbsp;PDF, так как в&nbsp;этом случае не&nbsp;будет нарушаться структура содержимого. В&nbsp;типографии вы&nbsp;можете привести дипломную работу или курсовую в&nbsp;презентабельный вид&nbsp;&mdash; сброшюровать отдельные листы в&nbsp;твердый дипломный переплет. Цвет можно подобрать из&nbsp;того, что имеется в&nbsp;ассортименте.
+      </p>
+      </div>
+      <div>
+        <h3 class="article__title">Качественный сервис</h3>
+        <p class="article__descr paragraph">
+          Доверяя нам черно-белую печать и&nbsp;оформление ваших документов, вы&nbsp;можете быть уверены, что сотрудничаете с&nbsp;профессионалами. Мы&nbsp;работаем на&nbsp;качественном оборудовании с&nbsp;использованием проверенных материалов. Сотрудники полиграфии учтут все ваши пожелания при работе с&nbsp;материалом и&nbsp;помогут решить возникшие проблемы.
+        </p>
+      </div>
+      <p class="pricelist__descr pricelist__descr--2 paragraph">
+        - Мы не производим печать на бумаге клиента.<br>
+        - Заказ исполняется в зависимости от загруженности оборудования.
+      </p>
+    </div>
+  </article> -->
+  <section id="footer"></section>
+
+</body>
+</html>

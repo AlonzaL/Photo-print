@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/pricelist-table.css">
+  <link rel="stylesheet" href="/css/print/polaroid.css">
+  <title>Фото в стиле ПОЛАРОИД
+</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="polaroid" class="polaroid section-offset">
+    <div class="polaroid__container container">
+      <div class="title">
+        <h2 class="polaroid__title section-title">
+          Фото в стиле ПОЛАРОИД
+        </h2>
+        <!-- <p class="title__descr paragraph">
+          плакаты
+        </p> -->
+      </div>
+      <!-- <p class="polaroid__descr section__descr paragraph">
+        Мечтаете о&nbsp;постере любимой игры или о&nbsp;плакате с&nbsp;любимым актёром или группой?Широкоформатная печать реализует ваши желания и&nbsp;позволит наслаждаться любимыми вещами постоянно. Используйте любые изображения в&nbsp;своём дизайне помещений.
+      </p> -->
+      <!-- <article class="polaroid__article article flex">
+        <h3 class="article__title">
+          Особенности цветной печати
+        </h3>
+        <p class="article__descr paragraph">
+          Часто широкий формат фотопечати заказывают, для того чтобы применять в&nbsp;рекламной или PR-кампании. Изображения высокого качества требуются:
+        </p>
+        <ul class="polaroid__list list-reset flex">
+          <li class="item-ul polaroid__item">
+            <p class="polaroid__descr item__descr paragraph">
+              для баннеров;
+            </p>
+          </li>
+          <li class="item-ul polaroid__item">
+            <p class="polaroid__descr item__descr paragraph">
+              плакатов;
+            </p>
+          </li>
+          <li class="item-ul polaroid__item">
+            <p class="polaroid__descr item__descr paragraph">
+              ролл-апов;
+            </p>
+          </li>
+          <li class="item-ul polaroid__item">
+            <p class="polaroid__descr item__descr paragraph">
+              пресс-воллов;
+            </p>
+          </li>
+          <li class="item-ul polaroid__item">
+            <p class="polaroid__descr item__descr paragraph">
+              стендов;
+            </p>
+          </li>
+          <li class="item-ul polaroid__item">
+            <p class="polaroid__descr item__descr paragraph">
+              лайтбоксов и многого другого.
+            </p>
+          </li>
+        </ul>
+        <p class="polaroid__descr paragraph">
+          Данный вид также подходит не&nbsp;только для бизнеса, но&nbsp;и&nbsp;для частных лиц, например, вы&nbsp;можете заказать широкоформатную фотопечать обоев, чтобы обновить ваш интерьер.
+        </p>
+      </article> -->
+      <div class="article__block flex">
+        <p class="block__title">
+          Важно!
+        </p>
+        <p class="block__descr block__descr--1 paragraph">
+          Цены на&nbsp;сайте носят информационный характер и&nbsp;не&nbsp;являются публичной офертой.
+        </p>
+        <!-- <p class="block__descr block__descr--2 paragraph">
+          Возможна печать нестандартных форматов шириной до 880 мм и длиной до 15 000 мм
+        </p> -->
+      </div>
+    </div>
+  </section>
+  <!-- <section id="pricelist" class="pricelist section-offset">
+    <div class="pricelist__container container">
+      <h2 class="pricelist__title section-title">
+        Прейскурант
+      </h2>
+      <div table--1>
+        <table class="pricelist__table--1 table">
+          <tr class="pricelist__tr">
+            <th class="pricelist__th">Формат</th>
+            <th class="pricelist__th">Тип покрытия</th>
+            <th class="pricelist__th">180 гр/м<sup>2</sup></th>
+            <th class="pricelist__th">190 гр/м<sup>2</sup></th>
+            <th class="pricelist__th">200 гр/м<sup>2</sup></th>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A2</p>
+                <p class="paper__descr">420 × 594 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">Матовая</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Глянец</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Сатин </td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--2 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A1</p>
+                <p class="paper__descr">594 × 841 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">Матовая</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Глянец</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Сатин </td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--3 table">
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A0</p>
+                <p class="paper__descr">841 × 1189 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">Матовая</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">Глянец</td>
+            <td class="pricelist__td">-</td>
+            <td class="pricelist__td">- руб.</td>
+            <td class="pricelist__td">-</td>
+          </tr>
+        </table>
+      </div>
+      <article class="pricelist__article article flex">
+        <h3 class="article__title">Требования для фотопечати широкого формата</h3>
+        <p class="article__descr paragraph">
+          Конечно&nbsp;же, мы&nbsp;сделаем все возможное, чтобы те&nbsp;изображения, которые вы&nbsp;хотите распечатать в&nbsp;широком формате, были наилучшего качества, но&nbsp;все-таки есть некоторые требования, которые значительно облегчат задачу.
+        </p>
+        <ul class="sector__list list-reset flex">
+          <li class="sector__item sector__item--1 flex">
+            <h4 class="sector__title">Форматы файлов</h4>
+            <p class="sector__descr  paragraph">
+              У&nbsp;растрового и&nbsp;векторного форматов есть свои особенности, которые сказываются на&nbsp;качестве печати. В&nbsp;случае конвертации могут измениться цвета и&nbsp;качество изображения. Для печати графических изображений лучше использовать векторный формат, для печати фотографий&nbsp;&mdash; растровый. Если вы&nbsp;создаете макет самостоятельно, то&nbsp;нужно помнить об&nbsp;этих нюансах.
+            </p>
+          </li>
+          <li class="sector__item sector__item--1 flex">
+            <h4 class="sector__title">Цветопередача</h4>
+            <p class="sector__descr  paragraph">
+              Изображение на&nbsp;экране монитора или мобильного устройства может отличаться от&nbsp;того, что в&nbsp;конечном итоге будет напечатано. Рекомендуется использовать цветовую модель CMYK. Лучше всего, если цвета будут согласованы заранее, чтобы избежать разногласий.
+            </p>
+          </li>
+          <li class="sector__item sector__item--2 flex">
+            <h4 class="sector__title">Масштаб</h4>
+            <p class="sector__descr paragraph">
+              Рекомендуемый масштаб изображения – 1:1, чтобы избежать искажений.
+            </p>
+            <p class="sector__descr paragraph">
+              Цены за услуги указаны в таблице ниже. У нас возможна распечатка форматов от 880 мм в ширину и до 15 000 мм в длину. Если у вас есть какие-то нестандартные пожелания к фотопечати, то мы с удовольствием их рассмотрим и предложим свое решение.
+            </p>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section> -->
+  <section id="footer"></section>
+
+</body>
+</html>

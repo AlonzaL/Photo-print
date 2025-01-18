@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/pricelist-table.css">
+  <link rel="stylesheet" href="/css/polygraphy/technical-requirements.css">
+  <title>Технические требования к&nbsp;макеты</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="specifications" class="specifications section-offset">
+    <div class="specifications__container container">
+      <h2 class="specifications__title section-title">
+        Технические требования к&nbsp;макеты
+      </h2>
+      <ul class="specifications__list list-reset">
+        <li class="specifications__item">
+          <details open>
+            <summary>
+              <h3 class="item__title title-ul">
+                Техническая информация
+              </h3>
+            </summary>
+            <ol class="technical-requirements__list list-reset">
+              <li class="technical-requirements__item">
+                <h3 class="technical-requirements__title">
+                  Форматы файлов для печати
+                </h3>
+                <ul class="formats__list list-reset">
+                  <li class="formats__item">
+                    <strong><span style="color: green;">Принимаются</span></strong> к&nbsp;печати файлы в&nbsp;форматах: TIF (предпочтительно), JPG, PDF [PDF/x-1a:2001], EPS, CDR.
+                  </li>
+                  <li class="formats__item">
+                    <strong><span style="color: red;">Не&nbsp;принимаются</span></strong> к&nbsp;печати файлы: GIF, BMP, PICT, DOC, XLS и&nbsp;др.
+                  </li>
+                </ul>
+                <ol class="format-type__list list-reset">
+                  <h3 class="format-type__title">
+                    Виды форматов:
+                  </h3>
+                  <li class="format__item">
+                    <h3 class="format__title item__title">
+                      .TIF&nbsp;&mdash; файл
+                    </h3>
+                    <ul class="specifications-format_list list-reset">
+                      <li class="specifications-format__item">
+                        Все слои объединены
+                      </li>
+                      <li class="specifications-format__item">
+                        Цветовая модель&nbsp;&mdash; CMYK
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> альфа кана
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> сжатия
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="format__item">
+                    <h3 class="format__title item__title">
+                      .JPG&nbsp;&mdash; файл
+                    </h3>
+                    <ul class="specifications-format_list list-reset">
+                      <li class="specifications-format__item">
+                        Только стандартный формат. <strong><span style="color: red;">Не&nbsp;допустимо</span></strong> использование формата JPG 2000 или JPG stereo
+                      </li>
+                      <li class="specifications-format__item">
+                        Сохранён с&nbsp;разрешением 300 dpi
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> сжатие
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="format__item">
+                    <h3 class="format__title item__title">
+                      .PDF&nbsp;&mdash; файл
+                    </h3>
+                    <ul class="specifications-format_list list-reset">
+                      <li class="specifications-format__item">
+                        Все шрифты в&nbsp;кривых
+                      </li>
+                      <li class="specifications-format__item">
+                        Цветовая модель CMYK
+                      </li>
+                      <li class="specifications-format__item">
+                        PDF версия <strong><span style="color: red;">не&nbsp;ниже</span></strong> 1.5
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> прозрачности
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> меток, резов и&nbsp;других непечатаемых объектов
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="format__item">
+                    <h3 class="format__title item__title">
+                      .CDR&nbsp;&mdash; файл
+                    </h3>
+                    <ul class="specifications-format_list list-reset">
+                      <li class="specifications-format__item">
+                        Цветовая модель CMYK
+                      </li>
+                      <li class="specifications-format__item">
+                        Шрифты в&nbsp;кривых
+                      </li>
+                      <li class="specifications-format__item">
+                        Версия <strong><span style="color: red;">не&nbsp;выше</span></strong>&nbsp;14
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> эффекты
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> ссылок на&nbsp;встроенные изображения
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> PowerClip
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> ole-объект
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> градиентной заливки
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Запрещено</span></strong> задавать фон страницы через свойства документа (Options&nbsp;/ Document&nbsp;/ Background)
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="format__item">
+                    <h3 class="format__title item__title">
+                      .EPS&nbsp;&mdash; файл
+                    </h3>
+                    <ul class="specifications-format_list list-reset">
+                      <li class="specifications-format__item">
+                        Цветовая модель CMYK
+                      </li>
+                      <li class="specifications-format__item">
+                        Шрифты в&nbsp;кривых
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> эффекты
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> ссылок на&nbsp;встроенные изображения
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> ole-объек
+                      </li>
+                      <li class="specifications-format__item">
+                        <strong><span style="color: red;">Не&nbsp;содержит</span></strong> градиентной заливки
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li class="technical-requirements__item">
+                <h3 class="technical-requirements__title">
+                  Размер макета
+                </h3>
+                <ul class="size__list list-reset">
+                  <li class="size__item">Макет должен быть сделан с припуском по 1 мм с каждой стороны. Значимая информация должна располагаться не ближе 3 мм (4 мм для цифровой печати) к краю макета, с учетом припуска. Все элементы "навылет" (фото или фоновый рисунок) должны занимать всю площадь макета. Файлы не должны содержать меток реза, крестов совмещения, шкал и каких-либо других элементов.
+                  </li>
+                </ul>
+                <p class="size__descr paragraph"><strong>Для примера:</strong> Дообрезной формат визитки: 52х92 мм, послеобрезной размер будет 50х90 мм; Дообрезной формат листовки: 101х212 мм, послеобрезной размер будет 99х210 мм.</p>
+              </li>
+              <li class="technical-requirements__item">
+                <h3 class="technical-requirements__title">
+                  Общие требования к&nbsp;файлу
+                </h3>
+                <ul class="general__list list-reset">
+                  <li class="general__item">
+                      Все слои сведены
+                  </li>
+                  <li class="general__item">
+                      Цветовая модель&nbsp;&mdash; CMYK
+                  </li>
+                  <li class="general__item">
+                      <strong><span style="color: red;">Не&nbsp;содержат</span></strong> альфа каналов
+                  </li>
+                  <li class="general__item">
+                      <strong><span style="color: red;">Не&nbsp;содержат</span></strong> ссылок на&nbsp;встроенные изображения (для формата CDR и&nbsp;EPS)
+                  </li>
+                  <li class="general__item">
+                      К&nbsp;объектам белого цвета <strong><span style="color: red;">не&nbsp;должен</span></strong> быть применен атрибут &laquo;наложение&raquo; (Overprint)
+                  </li>
+                  <li class="general__item">
+                      <strong><span style="color: red;">Не&nbsp;должны</span></strong> присутствовать скрытые элементы (линзы, тени, прозрачности, формы). Например, применение линзы приводит к&nbsp;исчезновению объектов, при проверке макетов данную проблему невозможно выявить.
+                  </li>
+                </ul>
+                <div class="general-block">
+                  <h3 class="general-block__title">
+                    Оверпринт (Overprint) и&nbsp;треппинг (Trapping)
+                  </h3>
+                  <ul class="general-block__list list-reset">
+                    <li class="general-block__item">
+                      Мелкому белому(светлому) тексту (объектам и&nbsp;линиям) на&nbsp;составном фоне обязательно делать треппинг.
+                    </li>
+                    <li class="general-block__item">
+                        Черному(темному цвету) массиву текста(элементам) на&nbsp;однородном фоне необходимо делать наложение заливки(overprint).
+                    </li>
+                  </ul>
+                </div>
+                <div class="general-block">
+                  <h3 class="general-block__title">
+                    Цветовой профиль&nbsp;&mdash; Coated FOGRA39
+                  </h3>
+                </div>
+              </li>
+              <li class="technical-requirements__item">
+                <h3 class="technical-requirements__title">
+                  Разрешение
+                </h3>
+                <ul class="permission__list list-reset">
+                  <li class="permission__item">
+                      Оптимальное разрешение для офсетной печати&nbsp;&mdash; 300 dpi
+                  </li>
+                </ul>
+              </li>
+              <li class="technical-requirements__item">
+                <h3 class="technical-requirements__title">
+                  Цвет
+                </h3>
+                <ul class="color__list list-reset">
+                  <li class="color__item">
+                      CMYK или градации серого, 8&nbsp;бит/канал
+                  </li>
+                  <li class="color__item">
+                      Минимальная красочность не&nbsp;меньше&nbsp;15%
+                  </li>
+                  <li class="color__item">
+                      Максимальная красочность не&nbsp;больше 280%
+                  </li>
+                  <li class="color__item">
+                      <strong><span style="color: red;">Не&nbsp;содержит</span></strong> ссылок на&nbsp;встроенные изображения
+                  </li>
+                  <li class="color__item">
+                      Цветовой профиль <strong><span style="color: red;">не&nbsp;встраивать</span></strong>
+                  </li>
+                </ul>
+              </li>
+              <li class="technical-requirements__item">
+                <h3 class="technical-requirements__title">
+                  Краска
+                </h3>
+                <ul class="paint__list list-reset">
+                  <li class="paint__item">
+                      <strong>Черный мелкий текст в&nbsp;одну краску:</strong> С=0, M=0, Y=0, K=100%
+                  </li>
+                  <li class="paint__item">
+                      <strong>Черный фон в&nbsp;4&nbsp;краски:</strong> С=60, M=50, Y=50, K=100%
+                  </li>
+                </ul>
+              </li>
+              <li class="technical-requirements__item">
+                <h3 class="technical-requirements__title">
+                  Размер векторных шрифтов
+                </h3>
+                <ul class="vector__list list-reset">
+                  <li class="vector__item">
+                      Размер шрифта для печати на&nbsp;светлом фоне не&nbsp;меньше 5&nbsp;пт.
+                  </li>
+                  <li class="vector__item">
+                      Размер шрифта для печати на&nbsp;тёмном фоне не&nbsp;меньше 6&nbsp;пт.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </details>
+        </li>
+        <li class="specifications__item">
+          <details>
+            <summary>
+              <h3 class="item__title title-ul">
+                Подготовка макета в&nbsp;редакторе CorelDRAW
+              </h3>
+            </summary>
+            <ul class="corel__list list-reset">
+              <li class="corel__item">
+                <p class="corel__descr paragraph">
+                  После подготовки макета, открываем меню File (Файл) и&nbsp;выбираем Publish To&nbsp;PDF (Сохранить в&nbsp;PDF)
+                </p>
+                <img src="/img/specifications/Corel-1.jpg" alt="Corel">
+              </li>
+              <li class="corel__item">
+                <p class="corel__descr paragraph">
+                  Затем в&nbsp;открывшемся окне нажимаем Settings (Настройки)
+                </p>
+                <img src="/img/specifications/Corel-2.jpg" alt="Corel">
+              </li>
+              <li class="corel__item">
+                <p class="corel__descr paragraph">
+                  В&nbsp;открывшимся окне выставляем настройки в&nbsp;точности как на&nbsp;изображениях по&nbsp;всем вкладкам
+                </p>
+                <img src="/img/specifications/Corel-3.jpg" alt="Corel">
+                <img src="/img/specifications/Corel-4.jpg" alt="Corel">
+                <img src="/img/specifications/Corel-5.jpg" alt="Corel">
+                <img src="/img/specifications/Corel-6.jpg" alt="Corel">
+              </li>
+              <li class="corel__item">
+                <p class="corel__descr paragraph">
+                  Затем на&nbsp;вкладке General нажимаем &laquo;+&raquo; вводим название допустим &laquo;SBORKA&raquo; и&nbsp;сохраняем
+                </p>
+                <img src="/img/specifications/Corel-7.jpg" alt="Corel">
+              </li>
+              <li class="corel__item">
+                <p class="corel__descr paragraph">
+                  Теперь можно сохранять PDF как указано в&nbsp;первом пункте
+                </p>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="specifications__item">
+          <details>
+            <summary>
+              <h3 class="item__title title-ul">
+                Подготовка макета в&nbsp;редакторе Adobe Photoshop
+              </h3>
+            </summary>
+            <ul class="adobe__list list-reset">
+              <li class="adobe__item">
+                <p class="adobe__descr paragraph">
+                  Сохраните свой макет в&nbsp;формате PDF [PDF/x-1a:2001], объединив слои. Для этого в&nbsp;меню File (Файл) выберите пункт Save&nbsp;As (Сохранить как). В&nbsp;открывшемся диалоге выберите формат Photoshop PDF.
+                </p>
+                <img src="/img/specifications/Adobe-1.jpg" alt="adobe">
+              </li>
+              <li class="adobe__item">
+                <p class="adobe__descr paragraph">
+                  После нажатия на&nbsp;кнопку Save (Сохранить) вам будет предоставлен выбор дополнительных параметров PDF: на&nbsp;вкладке General (Общие) выберите Preset (предустановленный вариант) PDF/x-1a:2001 и&nbsp;нажмите кнопку внизу диалогового окна Save PDF (Сохранить PDF).
+                </p>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="specifications__item">
+          <details>
+            <summary>
+              <h3 class="item__title title-ul">
+                Размер и&nbsp;переворот макета
+              </h3>
+            </summary>
+            <ul class="flipping-layout__list list-reset">
+              <li class="flipping-layout__item">
+                <p class="flipping-layout__descr paragraph">
+                  <strong>Поля макета на&nbsp;примере визитки&nbsp;&mdash;</strong> макет должен быть сделан с&nbsp;припуском по&nbsp;2&nbsp;мм с&nbsp;каждой стороны. Значимая информация должна располагаться не&nbsp;ближе 4&nbsp;мм к&nbsp;краю макета, с&nbsp;учетом припуска. Все элементы навылет, (фото или фоновый рисунок), должны занимать всю площадь макета.
+                </p>
+                <img src="/img/specifications/layout-1.png" alt="layout">
+              </li>
+              <li class="flipping-layout__item">
+                <p class="flipping-layout__descr paragraph">
+                  Вертикальные макеты размещённые горизонтально. Размещение вертикального макета осуществляется&nbsp;&mdash; &laquo;голова к&nbsp;голове&raquo;.
+                </p>
+                <img src="/img/specifications/layout-2.png" alt="layout">
+                <img src="/img/specifications/layout-3.png" alt="layout">
+              </li>
+              <li class="flipping-layout__item">
+                <p class="flipping-layout__descr paragraph">
+                  Для горизонтальных открыток и&nbsp;двойных визиток внутреннюю сторону необходимо перевернуть на&nbsp;180 градусов по&nbsp;отношению к&nbsp;лицевой части макета.
+                </p>
+                <img src="/img/specifications/layout-4.png" alt="layout">
+                <p class="flipping-layout__descr paragraph">
+                  <strong>Обращаем внимание</strong>, что при заказе продукции с&nbsp;фальцовкой/биговкой (лифлеты, буклеты, двойные визитки и&nbsp;прочее) необходимо верно указать лицевую и&nbsp;оборотную сторону макета в&nbsp;соответствующие окна &laquo;Параметры заказа&raquo;.
+                </p>
+              </li>
+              <li class="flipping-layout__item">
+                <p class="flipping-layout__descr paragraph">
+                  Макет лифлета:
+                </p>
+                <img src="/img/specifications/layout-5.png" alt="layout">
+                <img src="/img/specifications/layout-6.png" alt="layout">
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="specifications__item">
+          <details>
+            <summary>
+              <h3 class="item__title title-ul">
+                Шаблоны изделий
+              </h3>
+            </summary>
+            <ul class="pattern__list list-reset">
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-1.pdf" target="_blank">
+                  Визитка 90х50
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-2.pdf" target="_blank">
+                  Двойная визитка 90х100
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-3.pdf" target="_blank">
+                  Двойная визитка 50х180
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-4.pdf" target="_blank">
+                  Евровизитка 85х55
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-5.pdf" target="_blank">
+                  Двойная Евровизитка 55х170
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-6.pdf" target="_blank">
+                  Двойная Евровизитка 85х110
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-7.pdf" target="_blank">
+                  Буклет А3 в А4
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-8.pdf" target="_blank">
+                  Буклет А4 в А5
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-9.pdf" target="_blank">
+                  Буклет А5 в А6
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-10.pdf" target="_blank">
+                  Буклет А6 в А7
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-11.pdf" target="_blank">
+                  Евробуклет 198х210
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-12.pdf" target="_blank">
+                  Минибуклет 150х180
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-13.pdf" target="_blank">
+                  Еврофлаер 99х210
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-14.pdf" target="_blank">
+                  Лифлет А4 в накидку
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-15.pdf" target="_blank">
+                  Лифлет А4 в гармошку
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-16.pdf" target="_blank">
+                  Лифлет А3 в накидку
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-17.pdf" target="_blank">
+                  Лифлет А3 в гармошку
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-18.pdf" target="_blank">
+                  Плакат А3
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-19.pdf" target="_blank">
+                  Плакат А1
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-20.pdf" target="_blank">
+                  Плакат В1
+                </a>
+              </li>
+              <li class="pattern__item">
+                <a href="/img/specifications/pattern-21.pdf" target="_blank">
+                  Пластиковая
+                </a>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+      <div class="article__block flex">
+        <p class="block__title">
+          Важно!
+        </p>
+        <p class="block__descr block__descr--1 paragraph">
+          Просим учитывать, что изготовление полиграфической продукции происходит только по&nbsp;рабочим дням т.е. выходные дни прибавляются к&nbsp;сроку выполнения заказа.... Сроки исполнения заказов просим уточнять у&nbsp;менеджеров.
+        </p>
+        <!-- <p class="block__descr block__descr--2 paragraph">
+          <strong>СКИДКА СТУДЕНТАМ 10%</strong> на черно/белую печать документов при предъявлении студенческого билета.
+        </p> -->
+      </div>
+    </div>
+  </section>
+
+  <section id="footer"></section>
+
+</body>
+</html>

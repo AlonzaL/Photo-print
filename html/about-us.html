@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/about-us.css">
+  <title>О нас</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <main class="main">
+    <section id="header"></section>
+    <section id="about-us" class="about-us section-offset">
+      <div class="about-us__container container">
+        <h2 class="about-us__title section-title">
+          О нас
+        </h2>
+        <div class="about-us__content flex">
+          <div class="about-us__left">
+
+          </div>
+          <div class="about-us__right">
+            <p class="about-us__descr paragraph">
+              Nulla eu&nbsp;faucibus in&nbsp;arcu massa quis. Vel augue id&nbsp;dignissim sed eget sapien. Bibendum duis feugiat sagittis sit&nbsp;et. Morbi ac&nbsp;nisl volutpat aliquet felis. Pellentesque quis imperdiet in&nbsp;etiam egestas.
+            </p>
+            <p class="about-us__descr paragraph">
+              NLorem ipsum dolor sit amet consectetur. Semper amet ut eget eget mauris. Massa id tortor ac auctor gravida in massa tortor. Lorem suspendisse molestie iaculis facilisi aliquet dictum enim a. Risus est vulputate nam at quis consectetur porttitor tristique. Elit leo nam nisi viverra ultrices quis augue facilisis. Tempor viverra suspendisse dictum penatibus odio magna turpis cursus donec. Sem rhoncus sed urna sit. Ullamcorper quam interdum massa nulla. Lacinia tortor quam at sed mattis ac. Et consequat ipsum accumsan tincidunt. Egestas nunc arcu dolor sit. Eu convallis risus quam est nec pharetra tincidunt sed habitasse. In pretium at lectus ut et condimentum auctor.
+            </p>
+            <p class="about-us__descr paragraph">
+              Duis feugiat bibendum aliquam lorem ornare diam integer. Proin mauris enim orci ipsum. Faucibus odio porttitor magna ac quis. Elementum nibh tincidunt nisl eget eu. Euismod dapibus ut lectus tellus. Nisl quam id et sit tellus lorem. Semper libero tellus arcu euismod sed. At consectetur viverra luctus libero enim. Maecenas auctor diam dignissim elementum in in consectetur iaculis nunc. Amet semper fames tellus morbi facilisi leo. Elementum facilisis habitant mauris pellentesque cras suspendisse.
+            </p>
+            <p class="about-us__descr paragraph">
+              Pulvinar aenean cum iaculis eget leo faucibus. Id blandit nibh consectetur dictum. Faucibus diam vel gravida elementum pharetra eget.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="characteristics section-offset">
+      <div class="characteristics__container container">
+        <h2 class="characteristics__title section-title">
+          Наши качества
+        </h2>
+        <div class="characteristics__content flex">
+          <ul class="characteristics__list list-reset flex">
+            <li class="characteristics__item flex">
+              <img src="/img/img__about-us/printer.png" class="about-us__img" alt="Иконка">
+              <div class="item-left flex">
+                <h3 class="item__title">
+                Современное оборудование
+              </h3>
+              <p class="item__descr paragraph">
+                В&nbsp;наших магазинах только новейшее оборудование.
+              </p>
+              </div>
+            </li>
+            <li class="characteristics__item flex">
+              <img src="/img/img__about-us/badge.png" class="about-us__img" alt="Иконка">
+              <div class="item-left flex">
+                <h3 class="item__title">
+                Лучшие материалы
+              </h3>
+              <p class="item__descr paragraph">
+                Мы&nbsp;используем лишь высококлассные продукты.
+              </p>
+              </div>
+            </li>
+            <li class="characteristics__item flex">
+              <img src="/img/img__about-us/list.png" class="about-us__img" alt="Иконка">
+              <div class="item-left flex">
+                <h3 class="item__title">
+                Широкий спектр услуг
+              </h3>
+              <p class="item__descr paragraph">
+                Мы&nbsp;предлагаем разнообразный список услуг.
+              </p>
+              </div>
+            </li>
+            <li class="characteristics__item flex">
+              <img src="/img/img__about-us/maps.png" class="about-us__img" alt="Иконка">
+              <div class="item-left flex">
+                <h3 class="item__title">
+                Удобное расположение
+              </h3>
+              <p class="item__descr paragraph">
+                До&nbsp;нас всегда легко добраться.
+              </p>
+              </div>
+            </li>
+            <li class="characteristics__item flex">
+              <img src="/img/img__about-us/scanner.png" class="about-us__img" alt="Иконка">
+              <div class="item-left flex">
+                <h3 class="item__title">
+                Качественная печать
+              </h3>
+              <p class="item__descr paragraph">
+                Наша продукция не&nbsp;имеет изъянов в&nbsp;печати.
+              </p>
+              </div>
+            </li>
+            <li class="characteristics__item flex">
+              <img src="/img/img__about-us/team.png" class="about-us__img" alt="Иконка">
+              <div class="item-left flex">
+                <h3 class="item__title">
+                Дружелюбный персонал
+              </h3>
+              <p class="item__descr paragraph">
+                Всегда подскажет и&nbsp;расскажет о&nbsp;видах печати.
+              </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="footer"></section>
+  </main>
+
+</body>
+</html>

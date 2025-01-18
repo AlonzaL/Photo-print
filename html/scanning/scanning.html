@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/scanning/scanning.css">
+  <title>Сканирование</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="scanning" class="scanning section-offset">
+    <div class="scanning__container container">
+      <h2 class="scanning__title section-title">
+        Сканирование
+      </h2>
+      <ul class="scanning__list list list-reset flex">
+        <li class="scanning__item item item--2 flex">
+          <a href="/html/scanning/foto.html" class="card">
+            <h3 class="card__title">Сканирование изображений и фотографий</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="scanning__item item item--2 flex">
+          <a href="/html/scanning/large-format-foto.html" class="card">
+            <h3 class="card__title">Широкоформатное сканирование изображений и фото</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="scanning__item item item--2 flex">
+          <a href="/html/scanning/document.html" class="card">
+            <h3 class="card__title">Сканирование и распознавание документов</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="scanning__item item item--2 flex">
+          <a href="/html/scanning/large-format-document.html" class="card">
+            <h3 class="card__title">Широкоформатное сканирование документов</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+      </ul>
+      <p class="scanning__descr paragraph">
+        Электронный документооборот постепенно, но&nbsp;уверенно вытесняет бумажный. Неудивительно, ведь такие документы намного удобнее хранить в&nbsp;личном или рабочем компьютере, их&nbsp;можно быстро переслать родственнику, коллеге или клиенту, добавлять в&nbsp;электронные базы данных. В&nbsp;нашем копировальном центре установлено профессиональное оборудование, которое сканирует документы с&nbsp;разрешением от&nbsp;300&nbsp;dpi. Мы&nbsp;выполняем как черно-белое, так и&nbsp;цветное сканирование. Сканирование документов и&nbsp;фотографий доступно для A4, A3, A2, A1&nbsp;и&nbsp;документов большего формата. Ознакомиться с&nbsp;ценами на&nbsp;эти услуги вы&nbsp;можете в&nbsp;соответствующих разделах на&nbsp;сайте типографии FOTO-PRINT или уточнить информацию у&nbsp;нашего менеджера.
+      </p>
+    </div>
+  </section>
+  <article class="scanning__article article flex">
+    <div class="container article__container">
+      <div>
+        <h3 class="article__title">Цены на&nbsp;широкоформатное сканирование</h3>
+        <p class="article__descr article__descr--1 paragraph">
+          Цена на&nbsp;широкоформатное сканирование формата А0&nbsp;и&nbsp;выше зависит от&nbsp;размера документов или фотографий. Чтобы узнать точную стоимость услуги, обратитесь к&nbsp;нашему сотруднику. Вы&nbsp;можете сделать это в&nbsp;офисе или оформить онлайн-заказ.
+        </p>
+      </div>
+      <div>
+        <h3 class="article__title">Услуги по&nbsp;распознаванию документов</h3>
+        <p class="article__descr paragraph">
+          В&nbsp;нашей компании для вас доступны услуги по&nbsp;распознаванию документов. Это помогает сэкономить время, поскольку вам не&nbsp;придется набирать текст самостоятельно на&nbsp;компьютере. Вы&nbsp;сразу получите готовый документ, который можно изменять в&nbsp;текстовом редакторе. Мы&nbsp;предлагаем услугу распознавания документов по&nbsp;приятной цене, выполняем заказы разной сложности быстро и&nbsp;качественно.
+        </p>
+      </div>
+      <div>
+        <h3 class="article__title">Как сделать онлайн-заказ</h3>
+        <p class="article__descr paragraph">
+          Пришлите нам на&nbsp;почту или в&nbsp;мессенджеры файл, который надо распечатать или отсканировать. Телефон и&nbsp;электронная почта для связи указаны на&nbsp;главной странице сайта и&nbsp;в&nbsp;разделе &laquo;Контакты&raquo;. Мы&nbsp;уточним детали заказа и&nbsp;согласуем с&nbsp;вами стоимость услуги. Вы&nbsp;оплачиваете заказ и&nbsp;забираете его в&nbsp;нашем офисе по&nbsp;адресу: г. Коломна, ул. Зеленая, д.&nbsp;31. При покупке от&nbsp;1&nbsp;000 рублей мы&nbsp;доставим его бесплатно в&nbsp;пределах города Коломны.
+        </p>
+      </div>
+    </div>
+  </article>
+  <section id="footer"></section>
+
+</body>
+</html>

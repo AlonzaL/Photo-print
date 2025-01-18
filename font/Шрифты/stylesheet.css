@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-Medium.eot');
+    src: local('☞LytigaPro-Medium'), local('LytigaPro-Medium'),
+        url('LytigaPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-Medium.woff2') format('woff2'),
+        url('LytigaPro-Medium.woff') format('woff'),
+        url('LytigaPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-BlackItalic.eot');
+    src: local('☞LytigaPro-BlackItalic'), local('LytigaPro-BlackItalic'),
+        url('LytigaPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-BlackItalic.woff2') format('woff2'),
+        url('LytigaPro-BlackItalic.woff') format('woff'),
+        url('LytigaPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-BoldItalic.eot');
+    src: local('☞LytigaPro-BoldItalic'), local('LytigaPro-BoldItalic'),
+        url('LytigaPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-BoldItalic.woff2') format('woff2'),
+        url('LytigaPro-BoldItalic.woff') format('woff'),
+        url('LytigaPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-Black.eot');
+    src: local('☞LytigaPro-Black'), local('LytigaPro-Black'),
+        url('LytigaPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-Black.woff2') format('woff2'),
+        url('LytigaPro-Black.woff') format('woff'),
+        url('LytigaPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-ExtraLight.eot');
+    src: local('☞LytigaPro-ExtraLight'), local('LytigaPro-ExtraLight'),
+        url('LytigaPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-ExtraLight.woff2') format('woff2'),
+        url('LytigaPro-ExtraLight.woff') format('woff'),
+        url('LytigaPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-SemiBoldItalic.eot');
+    src: local('☞LytigaPro-SemiBoldItalic'), local('LytigaPro-SemiBoldItalic'),
+        url('LytigaPro-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-SemiBoldItalic.woff2') format('woff2'),
+        url('LytigaPro-SemiBoldItalic.woff') format('woff'),
+        url('LytigaPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-Regular.eot');
+    src: local('☞LytigaPro-Regular'), local('LytigaPro-Regular'),
+        url('LytigaPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-Regular.woff2') format('woff2'),
+        url('LytigaPro-Regular.woff') format('woff'),
+        url('LytigaPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-SemiBold.eot');
+    src: local('☞LytigaPro-SemiBold'), local('LytigaPro-SemiBold'),
+        url('LytigaPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-SemiBold.woff2') format('woff2'),
+        url('LytigaPro-SemiBold.woff') format('woff'),
+        url('LytigaPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-ExtraLightItalic.eot');
+    src: local('☞LytigaPro-ExtraLightItalic'), local('LytigaPro-ExtraLightItalic'),
+        url('LytigaPro-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-ExtraLightItalic.woff2') format('woff2'),
+        url('LytigaPro-ExtraLightItalic.woff') format('woff'),
+        url('LytigaPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-Bold.eot');
+    src: local('☞LytigaPro-Bold'), local('LytigaPro-Bold'),
+        url('LytigaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-Bold.woff2') format('woff2'),
+        url('LytigaPro-Bold.woff') format('woff'),
+        url('LytigaPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-LightItalic.eot');
+    src: local('☞LytigaPro-LightItalic'), local('LytigaPro-LightItalic'),
+        url('LytigaPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-LightItalic.woff2') format('woff2'),
+        url('LytigaPro-LightItalic.woff') format('woff'),
+        url('LytigaPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-Light.eot');
+    src: local('☞LytigaPro-Light'), local('LytigaPro-Light'),
+        url('LytigaPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-Light.woff2') format('woff2'),
+        url('LytigaPro-Light.woff') format('woff'),
+        url('LytigaPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-ThinItalic.eot');
+    src: local('☞LytigaPro-ThinItalic'), local('LytigaPro-ThinItalic'),
+        url('LytigaPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-ThinItalic.woff2') format('woff2'),
+        url('LytigaPro-ThinItalic.woff') format('woff'),
+        url('LytigaPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-MediumItalic.eot');
+    src: local('☞LytigaPro-MediumItalic'), local('LytigaPro-MediumItalic'),
+        url('LytigaPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-MediumItalic.woff2') format('woff2'),
+        url('LytigaPro-MediumItalic.woff') format('woff'),
+        url('LytigaPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('LytigaPro-Thin.eot');
+    src: local('☞LytigaPro-Thin'), local('LytigaPro-Thin'),
+        url('LytigaPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('LytigaPro-Thin.woff2') format('woff2'),
+        url('LytigaPro-Thin.woff') format('woff'),
+        url('LytigaPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

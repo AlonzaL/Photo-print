@@ -1,0 +1,34 @@
+.news__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.news__img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px 0 0 20px;
+  background: rgba(252, 185, 0, 0.5);
+}
+
+
+.item__right {
+  flex-direction: column;
+  padding: 20px;
+  width: 1020px;
+  border-radius: 0 20px 20px 0;
+  background: rgba(217, 217, 217, 0.25);
+}
+
+.item__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 92%;
+  margin-bottom: 24px;
+}
+
+.item__descr {
+  margin-bottom: 30px;
+}
+
+.item__date {
+  color: #828282;
+}

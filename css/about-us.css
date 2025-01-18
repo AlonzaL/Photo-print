@@ -1,0 +1,42 @@
+.about-us__left {
+  width: 50%;
+  background-color: #fcd900;
+  border-radius: 20px;
+  margin-right: 50px;
+}
+
+.about-us__right {
+  flex-direction: column;
+  width: 50%;
+}
+
+.about-us__descr:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.characteristics__list {
+  --offsets: 2; /*количество отступов между карточек на desktop*/
+  gap: var(--gap);
+  flex-wrap: wrap;
+
+}
+
+.characteristics__item {
+  padding: 24px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1) ); /*ширина 100%, --gap это отступы их 2, а карточек 3*/
+}
+
+.about-us__img {
+  width: 120px;
+  margin-right: 24px;
+}
+
+.item__title {
+  margin-bottom: 20px;
+}
+
+.item-left {
+  flex-direction: column;
+}

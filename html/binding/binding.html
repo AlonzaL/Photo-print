@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/binding/binding.css">
+  <title>Переплёт</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="binding" class="binding section-offset">
+    <div class="binding__container container">
+      <h2 class="binding__title section-title">
+        Переплёт
+      </h2>
+      <ul class="binding__list list list-reset flex">
+        <li class="binding__item item item--2 flex">
+          <a href="/html/binding/hardcover.html" class="card">
+            <h3 class="card__title">Твёрдый переплёт Metal.Bind на зажиме</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="binding__item item item--2 flex">
+          <a href="/html/binding/plastic.html" class="card">
+            <h3 class="card__title">Брошюровка пластиковой пружиной</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="binding__item item item--2 flex">
+          <a href="/html/binding/steel.html" class="card">
+            <h3 class="card__title">Брошюровка стальной пружиной</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+      </ul>
+      <p class="scanning__descr paragraph">
+        В&nbsp;нашей компании вы&nbsp;можете заказать твердый переплет документов. Мы&nbsp;используем два способа скрепления: страницы зажимаются посредством металлического канала или фиксируются с&nbsp;помощью клеевого метода. Оба способа надежны, и&nbsp;ваша работа будет красиво оформлена.
+      </p>
+    </div>
+  </section>
+  <article class="binding__article article flex">
+    <div class="container article__container">
+      <div>
+        <h3 class="article__title">Назначение и&nbsp;преимущества твердого переплета</h3>
+        <p class="binding__descr article__descr--1 paragraph">
+          Твердый переплет проектной, дипломной или диссертационной работы&nbsp;&mdash; заключительный этап подготовки к&nbsp;ее&nbsp;защите. Он&nbsp;играет важную роль:
+        </p>
+        <ul class="article__list binding__list list-reset flex">
+          <li class="item-ul">
+            <p class="item__descr paragraph">
+              защищает страницы от&nbsp;деформации;
+            </p>
+          </li>
+          <li class="item-ul">
+            <p class="item__descr paragraph">
+              создает аккуратный внешний вид проекта;
+            </p>
+          </li>
+          <li class="item-ul">
+            <p class="item__descr paragraph">
+              научную работу или проект удобно держать в&nbsp;руках;
+            </p>
+          </li>
+          <li class="item-ul">
+            <p class="item__descr paragraph">
+              страницы надежно закреплены и&nbsp;не&nbsp;рассыплются по&nbsp;комнате.
+            </p>
+          </li>
+        </ul>
+        <p class="article__descr article__descr--2 paragraph">
+          Сотрудники компании FOTO-PRINT помогут вам оформить вашу работу в&nbsp;твердый переплет по&nbsp;разумной цене. Она зависит от&nbsp;формата бумаги и&nbsp;количества листов, которые необходимо оформить в&nbsp;твердый переплет.
+        </p>
+      </div>
+      <div>
+        <h3 class="article__title">Для чего нужна брошюровка документов</h3>
+        <p class="article__descr paragraph">
+          Это один из&nbsp;самых простых способов скрепления листов. В&nbsp;типографии FOTO-PRINT вы&nbsp;можете заказать услуги по&nbsp;брошюровке документов пластиковой или стальной пружиной по&nbsp;невысокой цене. В&nbsp;результате листы надежно закреплены, а&nbsp;ваши документы выглядят солидно и&nbsp;аккуратно. Их&nbsp;удобно просматривать, носить с&nbsp;собой, и&nbsp;можно не&nbsp;бояться потерять важный лист. Стоимость брошюровки документов зависит от&nbsp;материала пружины, формата бумаги и&nbsp;количества листов, которые необходимо скрепить.
+        </p>
+      </div>
+      <div>
+        <h3 class="article__title">Предложение компании FOTO-PRINT</h3>
+        <p class="article__descr paragraph">
+          Заказать твердый переплет документов по&nbsp;приятной цене, а&nbsp;также услуги по&nbsp;брошюровке полиграфических материалов пластиковой или стальной пружиной вы&nbsp;можете по&nbsp;адресу: Московская область, город Коломна, ул. Зеленая, д.&nbsp;31. Или оформите заказ онлайн. Для этого напишите нам на&nbsp;почту или в&nbsp;мессенджеры. Информация для связи указана на&nbsp;главной странице сайта и&nbsp;в&nbsp;разделе &laquo;Контакты&raquo;.
+        </p>
+      </div>
+    </div>
+  </article>
+  <section id="footer"></section>
+
+</body>
+</html>

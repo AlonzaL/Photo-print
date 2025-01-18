@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/payment.css">
+  <title>Оплата и доставка</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <main class="main">
+    <section id="header"></section>
+    <section id="payment" class="payment section-offset">
+      <div class="payment__container container">
+        <h2 class="payment__title section-title">
+          Правила оплаты
+        </h2>
+        <div class="payment__content flex">
+          <img src="/img/payment/payment-card.svg" alt="Карта банка" class="payment__img">
+          <div class="payment__right">
+            <p class="payment__descr paragraph">
+              К&nbsp;оплате принимаются <strong>платежные карты</strong>: VISA Inc, MasterCard WorldWide, МИР.
+              Для оплаты товара банковской картой при оформлении заказа в&nbsp;интернет-магазине выберите способ оплаты: банковской картой.
+              При оплате заказа банковской картой, обработка платежа происходит на&nbsp;авторизационной странице банка, где Вам необходимо ввести данные Вашей банковской карты:
+            </p>
+            <ul class="payment__list list-reset flex">
+              <li class="item-ul payment__item" >
+                <p class="payment__descr item__descr paragraph">Тип карты</p>
+              </li>
+              <li class="item-ul payment__item" >
+                <p class="payment__descr item__descr paragraph">Номер карты</p>
+              </li>
+              <li class="item-ul payment__item" >
+                <p class="payment__descr item__descr paragraph">Срок действия карты (указан на&nbsp;лицевой стороне карты)</p>
+              </li>
+              <li class="item-ul payment__item" >
+                <p class="payment__descr item__descr paragraph">Имя держателя карты (латинскими буквами, точно также как указано на&nbsp;карте)</p>
+              </li>
+              <li class="item-ul payment__item" >
+                <p class="payment__descr item__descr paragraph">CVC2/CVV2 код</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="return section-offset">
+      <div class="return__container container">
+        <h2 class="return__title section-title">
+          Возврат товара
+        </h2>
+        <div class="return__content flex">
+          <p class="return__descr paragraph">
+            Процедура возврата товара регламентируется статьей 26.1 федерального закона «О защите прав потребителей».
+          </p>
+          <ul class="return__list list-reset flex">
+            <li class="item-ul return__item">
+              <p class="item__descr paragraph">
+                Потребитель вправе отказаться от товара в любое время до его передачи, а после передачи товара - в течение семи дней;
+              </p>
+            </li>
+            <li class="item-ul return__item">
+              <p class="item__descr paragraph">
+                Возврат товара надлежащего качества возможен в случае, если сохранены его товарный вид, потребительские свойства, а также документ, подтверждающий факт и условия покупки указанного товара;
+              </p>
+            </li>
+            <li class="item-ul return__item">
+              <p class="item__descr paragraph">
+                Потребитель не вправе отказаться от товара надлежащего качества, имеющего индивидуально-определенные свойства, если указанный товар может быть использован исключительно приобретающим его человеком;
+              </p>
+            </li>
+            <li class="item-ul return__item">
+              <p class="item__descr paragraph">
+                При отказе потребителя от товара продавец должен возвратить ему денежную сумму, уплаченную потребителем по договору, за исключением расходов продавца на доставку от потребителя возвращенного товара, не позднее чем через десять дней со дня предъявления потребителем соответствующего требования;
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="refusal section-offset">
+      <div class="refusal__container container">
+        <h2 class="refusal__title section-title">Отказ от услуги</h2>
+        <div class="refusal__contant flex">
+          <p class="refusal__descr paragraph">Право потребителя на расторжение договора об оказании услуги регламентируется статьей 32 федерального закона «О защите прав потребителей»</p>
+          <ul class="refusal__list list-reset flex">
+            <li class="item-ul refusal__item">
+              <p class="item__descr">Потребитель вправе расторгнуть договор об оказании услуги в любое время, уплатив исполнителю часть цены пропорционально части оказанной услуги до получения извещения о расторжении указанного договора и возместив исполнителю расходы, произведенные им до этого момента в целях исполнения договора, если они не входят в указанную часть цены услуги;</p>
+            </li>
+            <li class="item-ul refusal__item">
+              <p class="item__descr">Потребитель при обнаружении недостатков оказанной услуги вправе по своему выбору потребовать:</p>
+              <ul class="description__list list-reset flex">
+                <li class="item-ul description__item">
+                  <p class="item__descr paragraph">безвозмездного устранения недостатков;</p>
+                </li>
+                <li class="item-ul description__item">
+                  <p class="item__descr paragraph">соответствующего уменьшения цены;</p>
+                </li>
+                <li class="item-ul description__item">
+                  <p class="item__descr paragraph">возмещения понесенных им расходов по устранению недостатков своими силами или третьими лицами;</p>
+                </li>
+              </ul>
+            </li>
+            <li class="item-ul refusal__item">
+              <p class="item__descr">Потребитель вправе предъявлять требования, связанные с недостатками оказанной услуги, если они обнаружены в течение гарантийного срока, а при его отсутствии в разумный срок, в пределах двух лет со дня принятия оказанной услуги;</p>
+            </li>
+            <li class="item-ul refusal__item">
+              <p class="item__descr">Исполнитель отвечает за недостатки услуги, на которую не установлен гарантийный срок, если потребитель докажет, что они возникли до ее принятия им или по причинам, возникшим до этого момента;</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="details section-offset">
+      <div class="details__container container">
+        <h2 class="details__title section-title">Реквизиты оранизации</h2>
+        <table class="details__table">
+          <tr class="details__tr">
+            <td class="details__td">Название компании</td>
+            <td class="details__td">ИП Востротина Г.А.</td>
+          </tr>
+          <tr class="details__tr">
+            <td class="details__td">ИНН</td>
+            <td class="details__td">612306042614</td>
+          </tr>
+          <tr class="details__tr">
+            <td class="details__td">Телефон</td>
+            <td class="details__td">+7 (915) 17-605-17</td>
+          </tr>
+          <tr class="details__tr">
+            <td class="details__td">Режим  работы</td>
+            <td class="details__td">Пн.-Пт. 9:00 - 19:00, Сб.-Вс. 09:00 - 17:00</td>
+          </tr>
+          <tr class="details__tr">
+            <td class="details__td">Почтовый адрес</td>
+            <td class="details__td">140410, г. Коломна, ул. Зелёная, д. 31 пом. 1</td>
+          </tr>
+          <tr class="details__tr">
+            <td class="details__td">Физический адрес</td>
+            <td class="details__td">140410, г. Коломна, ул. Зелёная, д. 31 пом. 1</td>
+          </tr>
+          <tr class="details__tr">
+            <td class="details__td">Юридический адрес</td>
+            <td class="details__td">140404, г. Коломна, ул. Девичье поле д. 23</td>
+          </tr>
+          <tr class="details__tr">
+            <td class="details__td">Почта</td>
+            <td class="details__td">info@foto-print.su</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="delivery section-offset">
+      <div class="delivery__container container">
+        <h2 class="delivery__title section-title">Доставка</h2>
+        <p class="delivery__descr paragraph">Доставка будет осуществляться <strong>компанией СДЕК</strong>. Стоимость рассчитывается по тарифам транспортной компании.</p>
+      </div>
+    </section>
+    <section id="footer"></section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+/* сброс кнопок */
+.btn-reset {
+padding: 0;
+border: none;
+background-color: transparent;
+cursor: pointer;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 10px 20px 10px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  background-color: #FCB900;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.img__btn {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.btn-inf {
+  margin-right: 0;
+}
+
+/*header*/
+.header {
+  border-bottom: 2px solid #fcb900;
+}
+
+.header__container {
+  flex-direction: column;
+}
+
+.header__up {
+  margin-bottom: 14px;
+}
+
+.form__up {
+  margin-right: auto;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.header__down {
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 24px;
+  margin-bottom: 11px;
+}
+
+.img__logo {
+  width: 169px;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.profile__content {
+  width: 358px;
+  height: 272px;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+  margin-top: 15px;
+  padding: 20px;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 4px 4px 15px 0 rgba(181, 181, 181, 0.5);
+}
+
+/* Ссылки внутри выпадающего списка */
+.content__link {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.content__link:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.btn-block {
+  display: inline-flex;
+}
+
+.catalog__btn:focus ~ .dropdown-content,
+.catalog__btn:active ~ .dropdown-content,
+.dropdown-content:hover
+{
+   display: block;
+}
+
+.inf__btn:focus ~ .dropdown-content,
+.inf__btn:active ~ .dropdown-content,
+.dropdown-content:hover
+{
+   display: block;
+}
+
+.profile__btn:focus ~ .dropdown-content,
+.profile__btn:active ~ .dropdown-content,
+.dropdown-content:hover
+{
+   display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {background-color: #ddd;}
+
+.profile__block:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.login__btn {
+  width: 100%;
+}
+
+.profile__login, .profile__password {
+  margin-bottom: 6px;
+}
+
+.login, .password {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b5b5b5;
+  border-radius: 6px;
+  color: #b5b5b5;
+}
+
+.reg-block {
+  justify-content: space-between;
+}
+
+.profile__deskr {
+  font-size: 14px;
+  color: #b5b5b5;
+}
+
+.searh__block {
+  align-items: center;
+  margin-right: 24px;
+  border: 1px solid #b5b5b5;
+  border-radius: 6px;
+  width: 600px;
+  height: 40px;
+  padding: 10px;
+}
+
+.search {
+  border: none;
+  background-color: transparent;
+}
+
+.search__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.dropdown__catalog, .dropdown__inf, .dropdown__profile {
+  margin-right: 24px;
+}
+
+.inf__btn {
+  background-color: #fff;
+}
+
+.busket-btn {
+  background-color: #fff;
+  border: 1px solid #b5b5b5;
+}

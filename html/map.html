@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/map.css">
+  <title>Контакты</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="map" class="map  section-offset">
+    <div class="map__container container">
+      <h2 class="map__title section-title">
+        Карта
+      </h2>
+      <div class="map__block--Kolomna">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4c37e2e682f5db4df51c5e14cf910963ec94785a9b5772600bfde6adbe2cf4f2&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div class="map__block--Egorevsk">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A05973f2c4e124ed932be49a5bde7ba32600defd672da1f3c08502281434e872d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div class="map__addres flex">
+        <div class="addres">
+          <a href="#" class="addres__link flex">
+            <h3 class="addres__title">Коломна</h3>
+            <ul class="time__list list-reset flex">
+              <li class="time__item">
+                <p class="time--1 paragraph">Пн - Пт: 09:00 - 19:00</p>
+              </li>
+              <li class="time__item">
+                <p class="time--2 paragraph">Сб - Вс: 09:00 - 17:00</p>
+              </li>
+            </ul>
+            <p class="addres__street paragraph">ул. Зелёная, дом 31</p>
+            <ul class="contact__list list-reset flex">
+              <li class="contact__item">
+                <p class="contact__tel paragraph">+7 (915) 176 05 17</p>
+              </li>
+              <li class="contact__item">
+                <p class="contact__mail paragraph">info@foto-print.su</p>
+              </li>
+            </ul>
+          </a>
+        </div>
+        <div class="addres">
+          <a href="#" class="addres__link flex">
+            <h3 class="addres__title">Егорьевск</h3>
+            <ul class="time__list list-reset flex">
+             <li class="time__item paragraph">
+               <p class="time--1 paragraph">Пн - Пт: 09:00 - 19:00</p>
+             </li>
+             <li class="time__item paragraph">
+               <p class="time--2 paragraph">Сб - Вс: 09:00 - 17:00</p>
+             </li>
+            </ul>
+           <p class="addres__street paragraph">ул. Советская 108/16</p>
+           <ul class="contact__list list-reset flex">
+             <li class="contact__item">
+               <p class="contact__tel">+7 (977) 459 66 60</p>
+             </li>
+             <li class="contact__item">
+               <p class="contact__mail">190@foto-print.su</p>
+             </li>
+           </ul>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer"></section>
+</body>
+</html>

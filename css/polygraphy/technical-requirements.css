@@ -1,0 +1,58 @@
+.specifications__item {
+  margin-bottom: 24px;
+}
+
+.title-ul {
+  display: inline;
+}
+
+ol>li{
+  display:block;
+}
+
+ol{
+  counter-reset:item;
+}
+
+ol>li:before{
+  counter-increment:item;
+  content:counters(item,".") "  ";
+}
+
+.technical-requirements__title, .format__title, .general-block__descr {
+  display: inline;
+}
+
+.specifications-format__item, .formats__item,
+.size__item, .general__item, .general-block__item,
+.permission__item, .color__item,
+.paint__item, .vector__item {
+  list-style: inside;
+  margin-bottom: 5px;
+}
+
+.technical-requirements__item {
+  margin-top: 10px;
+}
+
+/* Подготовка макета в&nbsp;редакторе CorelDRAW */
+/* Подготовка макета в&nbsp;редакторе Adobe Photoshop */
+/* Размер и&nbsp;переворот макета */
+.corel__item, .adobe__item,
+.flipping-layout__item, .pattern__item {
+  list-style: inside;
+  margin-bottom: 10px;
+}
+
+.corel__descr, .adobe__descr, .flipping-layout__descr {
+  display: inline;
+}
+
+img {
+  display: block;
+  margin-top: 5px;
+}
+
+.pattern__list {
+  margin-top: 15px;
+}

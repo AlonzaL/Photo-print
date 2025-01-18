@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/pricelist-table.css">
+  <link rel="stylesheet" href="/css/stickers/round.css">
+  <title>Наклейки круглые</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="round" class="round section-offset">
+    <div class="round__container container">
+      <div class="title">
+        <h2 class="round__title section-title">
+          Наклейки круглые
+        </h2>
+      </div>
+      <!-- <p class="round__descr section__descr paragraph">
+        Ламинирование (ламинация)&nbsp;&mdash; это процесс покрытия плёнкой бумаги или картона.
+      </p> -->
+      <!-- <article class="round__article article flex">
+        <h3 class="article__title">
+          Особенности черно-белой печати
+        </h3>
+        <p class="article__descr paragraph">
+          Черно-белая печать является монохромной. Используется только один цвет, поэтому текст получается четким, но&nbsp;данная техника не&nbsp;рекомендуется для печати изображений, так как в&nbsp;этом случае изображение будет плоским.
+        </p>
+      </article> -->
+      <!-- <div class="article__block flex">
+        <p class="block__title">
+          Важно!
+        </p>
+        <p class="block__descr block__descr--1 paragraph">
+          Минимальное время изготовления заказа составляет 20&nbsp;минут.
+        </p>
+        <p class="block__descr block__descr--2 paragraph">
+          Брошюровка фальцованных чертежей - от .....руб.
+        </p>
+      </div> -->
+    </div>
+  </section>
+   <!-- <section id="pricelist" class="pricelist section-offset">
+    <div class="pricelist__container container">
+      <h2 class="pricelist__title section-title">
+        Прейскурант
+      </h2>
+      <div table--1>
+        <table class="pricelist__table--1 table">
+          <tr class="pricelist__tr">
+            <th class="pricelist__th">Формат</th>
+            <th class="pricelist__th">Размер пружины</th>
+            <th class="pricelist__th">Количество листов</th>
+            <th class="pricelist__th">Стоимость</th>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A4</p>
+                <p class="paper__descr">210 × 297 мм</p>
+              </div>
+            </td>
+            <td class="pricelist__td">6 мм</td>
+            <td class="pricelist__td">5 - 35</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">8 мм</td>
+            <td class="pricelist__td">36 - 50</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">12,7 мм</td>
+            <td class="pricelist__td">51 - 80</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table--1 table">
+          <tr class="pricelist__tr">
+            <th class="pricelist__th">Формат</th>
+            <th class="pricelist__th">Размер пружины</th>
+            <th class="pricelist__th">Количество листов</th>
+            <th class="pricelist__th">Стоимость</th>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td pricelist__td-common" rowspan="77">
+              <div class="pricelist__paper flex">
+                <p class="paper__title">A3</p>
+                <p class="paper__descr">297 × 420 мм</p>
+                <p class="paper__descr">(горизонтальная ориентация)</p>
+              </div>
+            </td>
+            <td class="pricelist__td">6 мм</td>
+            <td class="pricelist__td">5 - 35</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">8 мм</td>
+            <td class="pricelist__td">36 - 50</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+          <tr class="pricelist__tr">
+            <td class="pricelist__td">12,7 мм</td>
+            <td class="pricelist__td">51 - 80</td>
+            <td class="pricelist__td">- руб.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section> -->
+  <!-- <article class="round__article article flex">
+    <div class="container article__container">
+      <div>
+        <h3 class="article__title">Заключительный этап</h3>
+      <p class="article__descr article__descr--1 paragraph">
+        Использование пружины является заключительным этапом подготовки дипломных и&nbsp;курсовых проектов, буклетов и&nbsp;бумаг, предназначенных для симпозиумов и&nbsp;конференций. Такой переплет дает возможность развернуть листы на&nbsp;360&nbsp;градусов, что вообще невозможно осуществить в&nbsp;случае с&nbsp;твердым переплетом или пластиковой пружиной.
+      </p>
+      <p class="article__descr article__descr--2 paragraph">
+        Мы&nbsp;предлагаем помощь в&nbsp;оформлении дипломных работ. Рекомендуется менять формат документа с&nbsp;Word на&nbsp;PDF, так как в&nbsp;этом случае не&nbsp;будет нарушаться структура содержимого. В&nbsp;типографии вы&nbsp;можете привести дипломную работу или курсовую в&nbsp;презентабельный вид&nbsp;&mdash; сброшюровать отдельные листы в&nbsp;твердый дипломный переплет. Цвет можно подобрать из&nbsp;того, что имеется в&nbsp;ассортименте.
+      </p>
+      </div>
+      <div>
+        <h3 class="article__title">Качественный сервис</h3>
+        <p class="article__descr paragraph">
+          Доверяя нам черно-белую печать и&nbsp;оформление ваших документов, вы&nbsp;можете быть уверены, что сотрудничаете с&nbsp;профессионалами. Мы&nbsp;работаем на&nbsp;качественном оборудовании с&nbsp;использованием проверенных материалов. Сотрудники полиграфии учтут все ваши пожелания при работе с&nbsp;материалом и&nbsp;помогут решить возникшие проблемы.
+        </p>
+      </div>
+      <p class="pricelist__descr pricelist__descr--2 paragraph">
+        - Мы не производим печать на бумаге клиента.<br>
+        - Заказ исполняется в зависимости от загруженности оборудования.
+      </p>
+    </div>
+  </article> -->
+  <section id="footer"></section>
+
+</body>
+</html>

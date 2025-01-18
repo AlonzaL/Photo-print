@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/lamination/lamination.css">
+  <title>Ламинирование</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="lamination" class="lamination section-offset">
+    <div class="lamination__container container">
+      <h2 class="lamination__title section-title">
+        Ламинирование
+      </h2>
+      <ul class="lamination__list list list-reset flex">
+        <li class="lamination__item item item--2 flex">
+          <a href="/html/lamination/lami.html" class="card">
+            <h3 class="card__title">Ламинирование</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="footer"></section>
+
+</body>
+</html>

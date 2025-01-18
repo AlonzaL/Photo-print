@@ -1,0 +1,178 @@
+.article {
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.article__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 40px;
+  margin-bottom: 24px;
+}
+
+.section__descr {
+  width: 97%;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 69%;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.article__block {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  border: 2px solid #fcb900;
+  border-radius: 20px;
+}
+
+.block__title {
+  font-size: 32px;
+}
+
+.block__title, .block__descr:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.block__descr {
+  text-align: center;
+}
+
+.block__descr--2 {
+  width: 90%;
+}
+
+/* .article__descr {
+  margin-bottom: 40px;
+} */
+
+/* pricelist */
+.pricelist__title {
+  text-align: center;
+}
+
+.table {
+  /* border: 2px solid #fcb900; */
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  box-shadow: 4px 4px 15px 0 rgba(181, 181, 181, 0.5);
+}
+
+.table:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.table:first-child {
+  border-radius: 20px 20px 0 0;
+}
+
+.table:last-child {
+  margin-bottom: 40px;
+  border-radius: 0 0 20px 20px;
+}
+
+.tr-hidden {
+  opacity: 0;
+}
+
+col {
+  display: table-column;
+  unicode-bidi: isolate;
+  width: 264px;
+}
+
+col:nth-child(1) {
+  width: 20%;
+}
+
+
+.table--2 td:not(:nth-child(1)) {
+  width: auto;
+}
+
+.subtitle {
+  width: 211.2px;
+}
+
+.table--3 td {
+  width: inherit;
+}
+
+.col-5 {
+  width: 264px
+}
+
+.pricelist__paper {
+  flex-direction: column;
+}
+
+.paper__title {
+  font-size: 48px;
+}
+
+td {
+  text-align: center;
+}
+
+td {
+  width: 20%;
+}
+
+td, th {
+  padding: 12px;
+  border: 2px solid #fcb900;
+}
+
+th:first-child { border-top-left-radius: 20px; }
+th:last-child { border-top-right-radius: 20px; }
+
+.table:last-child .pricelist__td-common { border-bottom-left-radius: 20px; }
+.table:last-child tr:last-child td:last-child { border-bottom-right-radius: 20px; }
+
+/* tr:first-child td:first-child { border-top-left-radius: 20px; }
+tr:first-child td:last-child { border-top-right-radius: 20px; }
+
+tr:last-child td:first-child { border-bottom-left-radius: 20px; }
+tr:last-child td:last-child { border-bottom-right-radius: 20px; } */
+
+.sector__list {
+  flex-wrap: wrap;
+  gap: var(--gap);
+  --offsets: 2;
+}
+
+.sector__item {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1) ); /*ширина 100%, --gap это отступы их 3, а карточек 4*/
+  border: 2px solid #fcb900;
+  border-radius: 20px;
+}
+
+.sector__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sector__descr {
+  text-align: center;
+}
+
+.article .article__descr {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Normalize.css">
+  <link rel="stylesheet" href="/css/style-common.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/print/print.css">
+  <title>Печать</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="png">
+</head>
+<body>
+  <script>
+    // Загрузка заголовка...
+    fetch('/common/header.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+  </script>
+  <script>
+    // Загрузка подвала...
+    fetch('/common/footer.html')
+      .then(response => response.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+
+  <section id="header"></section>
+  <section id="print" class="print section-offset">
+    <div class="print__container container">
+      <h2 class="print__title section-title">
+        Печать
+      </h2>
+      <ul class="print__list list list-reset flex">
+        <li class="print__item item item--1 flex">
+          <a href="/html/print/black-white.html" class="card">
+            <h3 class="card__title">Чёрно-белая печать</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="print__item item item--1 flex">
+          <a href="/html/print/color.html" class="card">
+            <h3 class="card__title">Цветная печать</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="print__item item item--1 flex">
+          <a href="/html/print/large-format.html" class="card">
+            <h3 class="card__title">Широкоформатная фотопечать</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="print__item item item--1 flex">
+          <a href="/html/print/foto.html" class="card">
+            <h3 class="card__title">Печать фотографий</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="print__item item item--2 flex">
+          <a href="/html/print/large-format-bw.html" class="card">
+            <h3 class="card__title">Широкоформатная чёрно-белая печать</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="print__item item item--2 flex">
+          <a href="/html/print/plan.html" class="card">
+            <h3 class="card__title">Печать чертежей</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="print__item item item--1 flex">
+          <a href="/html/print/large-format-color.html" class="card">
+            <h3 class="card__title">Широкоформатная цветная печать</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="print__item item item--1 flex">
+          <a href="/html/print/canvas.html" class="card">
+            <h3 class="card__title">Печать на холсте</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="print__item item item--1 flex">
+          <a href="/html/print/poster.html" class="card">
+            <h3 class="card__title">Печать плакатов и постеров</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+        <li class="print__item item item--1 flex">
+          <a href="/html/print/polaroid.html" class="card">
+            <h3 class="card__title">Фото в стиле ПОЛАРОИД</h3>
+            <img src="#" alt="Картинка" class="card__img">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="footer"></section>
+
+</body>
+</html>
